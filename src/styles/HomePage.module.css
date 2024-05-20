@@ -1,0 +1,27 @@
+.imagem_home_page {
+    width: 400px;
+    height: 400px;
+}
+
+.titulo {
+    color: #1C6289;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 58px;
+}
+
+.subtitulo {
+    color: #458FF6;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.home_page {
+    padding: 40px 175px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}

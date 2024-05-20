@@ -1,0 +1,12 @@
+
+.titulo {
+    color:#345392;
+    display: flex;
+    justify-content: center;
+}
+
+.subtitulo {
+    color: #6C79AF;
+    display: flex;
+    justify-content: center;
+}
