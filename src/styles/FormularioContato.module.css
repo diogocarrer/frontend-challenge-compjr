@@ -1,0 +1,73 @@
+.titulo {
+    display: flex;
+    justify-content: center;
+    color: #1C6289;
+}
+
+.subtitulo {
+    display: flex;
+    justify-content: center;
+    color: #5e81c7;
+}
+
+.titulo_formulario {
+    color: #1C6289;
+}
+
+.subtitulo_formulario {
+    color: #5e81c7;
+}
+
+
+form {
+    max-width: 50%;
+    margin: 0 auto;
+    margin-bottom: 10em;
+    border: 3px solid #1C6289;
+    border-radius: 8px;
+    padding: 30px;
+    
+}
+  
+label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+  
+label span {
+    margin-bottom: .3em;
+    font-weight: bold;
+    text-align: left;
+}
+  
+input,
+textarea {
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 3px solid #1C6289;
+    padding: .8em 0;
+    background-color: transparent;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #5e81c7;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1C6289;
+    color: #f2f2f2;
+    padding: 10px 20px; /* Adicione padding para melhorar a aparência do botão */
+    border: none; /* Remova a borda padrão */
+    border-radius: 5px; /* Adicione bordas arredondadas */
+    cursor: pointer; /* Adicione um cursor pointer para indicar que é clicável */
+    margin: 0 auto; /* Centraliza o botão dentro do formulário */
+}
+
+.botao:hover {
+    background-color: #5e81c7;
+}

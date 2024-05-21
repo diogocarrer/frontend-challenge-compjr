@@ -7,7 +7,7 @@ import styles from './../styles/CardServicos.module.css';
 const CardServicos = () => {
     return (
         <div>
-            <section>
+            <section className={styles.card}>
                 <h2 className={styles.titulo}>Nossos Serviços</h2>
                 <p className={styles.subtitulo}>Pequena descrição como subtitulo</p>
                 <div>
@@ -22,7 +22,7 @@ const CardServicos = () => {
                         <img src={WebEstatico} alt="Serviço 3"/>
                     </div>
                 </div>
-    </section>
+            </section>
         </div>
     )
 }

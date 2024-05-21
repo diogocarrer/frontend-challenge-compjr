@@ -1,6 +1,8 @@
 //components
 import HomePage from "../components/HomePage"
 import CardServicos from "../components/CardServicos"
+import QuemSomos from "../components/QuemSomos"
+import FormularioContato from "../components/FormularioContato"
 
 const Home = () => {
   
@@ -8,6 +10,8 @@ const Home = () => {
         <div>
             <HomePage />
             <CardServicos />
+            <QuemSomos />
+            <FormularioContato />
         </div>
     )
 }
