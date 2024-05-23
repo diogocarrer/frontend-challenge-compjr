@@ -2,12 +2,11 @@
     "sobre": [
       {
         "id": 1,
-        "titulo": "Arlindo",
+        "titulo": "O que é a Comp Júnior",
         "subtitulo": "Arlindo",
         "descricao": [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula odio id nisl lacinia, at tristique velit hendrerit.",
-          "Proin aliquet sapien id magna fermentum, vel volutpat eros fringilla. Nullam sit amet mi et odio venenatis semper.",
-          "Vestibulum rutrum velit ut dui scelerisque, nec accumsan turpis placerat. Phasellus gravida felis nec velit consequat."
+          "Uma Empresa Júnior (EJ) é uma organização composta exclusivamente por estudantes de graduação que operam como uma empresa real, desenvolvendo projetos e concorrendo no mercado tradicional. No entanto, diferentemente das empresas tradicionais, uma EJ não visa lucro. O dinheiro gerado pelos projetos é reinvestido na própria empresa e em seus membros, proporcionando capacitações, acesso a materiais de aprendizado e participação em eventos do Movimento Empresa Júnior (MEJ).",
+          "Fundada em 11 de agosto de 1999, a Comp Júnior é uma Empresa Júnior da Universidade Federal de Lavras (UFLA), composta por estudantes dos cursos de Ciência da Computação, Sistemas de Informação e Engenharia de Controle e Automação. A Comp Júnior desenvolve diversas soluções, incluindo consultoria em web design, desenvolvimento de sistemas online e mobile, capacitações em ferramentas de tecnologia, design de interfaces e consultoria em marketing. Atualmente, a Comp Júnior conta com 48 membros de diversos cursos da UFLA e é reconhecida regionalmente por seus serviços de qualidade e parcerias estratégicas."
         ]
       },
       {
@@ -50,6 +49,12 @@
           "Phasellus nec urna in elit blandit dignissim. Sed id lacus in urna mollis vestibulum."
         ]
       }
+    ],
+    
+    "cases": [
+      { "id": "1", "titulo": "a", "descricao": "Descrição para o slide 1", "image": "https://api.dinamico.compjunior.com.br/files/images/screenshot20210415-se7i.png" },
+      { "id": "2", "titulo": "b", "descricao": "Descrição para o slide 2", "image": "https://api.dinamico.compjunior.com.br/files/images/screenshot20210415-juridica-jr1.png" },
+      { "id": "3", "titulo": "c", "descricao": "Descrição para o slide 3", "image": "https://api.dinamico.compjunior.com.br/files/images/screenshot20210415-lar-e-vida1.png" }
     ]
-  }
+}
   
