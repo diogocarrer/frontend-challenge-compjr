@@ -1,24 +1,4 @@
-/* .card {
-    margin-bottom: 10em;
-}
-
-.titulo {
-    color: #345392;
-    display: flex;
-    justify-content: center;
-}
-
-.subtitulo {
-    color: #6C79AF;
-    display: flex;
-    justify-content: center;
-}
-
-image {
-    display: inline-block;
-
-}
- */
+/* 
 
 
  .titulo {
@@ -33,19 +13,65 @@ image {
     justify-content: center;
 }
 
-.card_servico {
+.card {
     display: flex;
+    flex-direction: column;
     align-items: center;
+}
+
+.productImage {
+    width: 400px;
+    height: auto;
+} */
+
+
+.titulo {
+    display: flex;
     justify-content: center;
+    color: var(--dark-blue-color);
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 58px;
 }
 
-.card_imagem {
-    width: 400px; /* Ajuste conforme necessário */
-    height: 400px; /* Ajuste conforme necessário */
+.subtitulo {
+    display: flex;
+    justify-content: center;
+    color: var(--light-blue-color);
+    font-family: var(--second-font);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    margin: 0 0 30px 0;
 }
 
-.card_imagem:hover {
-    transform: scale(1.1);
-  opacity: 0.8;
+.cardContainer {
+    display: flex;
+    justify-content: center; /* Centraliza os cards horizontalmente */
+    gap: 50px 200px; /* Espaçamento entre os cards */
+    flex-wrap: wrap; /* Permite que os cards rolem para a linha seguinte se a tela for pequena */
+    padding: 16px 10%; /* Adiciona algum padding ao redor do contêiner */
+}
 
+
+.card {
+    position: relative; /* Define o contêiner do card como relativo */
+    padding: 16px;
+    width: 30%; /* Ajuste conforme necessário */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.productImage {
+    max-width: 100%;
+    max-height: 350px;
+    margin: auto; /* Centraliza a imagem horizontalmente */
+}
+
+.card a {
+    position: absolute; /* Posiciona o link/botão absolutamente */
+    bottom: 10px; /* Ajuste conforme necessário */
+    left: 50%; /* Move o botão para o meio do card horizontalmente */
+    transform: translateX(-50%); /* Corrige a posição do botão centralizando-o horizontalmente */
 }

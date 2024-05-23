@@ -1,7 +1,7 @@
 .footer {
     background: linear-gradient(180deg, #0B3650 0%, #1C6289 100%);
     color: #F2F2F2;
-    padding: 30px 175px; /* Adiciona padding de 20px em cima/baixo e 175px nas laterais */
+    padding: 30px 10%; /* Adiciona padding de 20px em cima/baixo e 175px nas laterais */
     display: flex;
     justify-content: space-between;
     align-items: flex-start;

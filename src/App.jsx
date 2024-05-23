@@ -23,7 +23,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/SaibaMais" element={<SaibaMais />} />
-            <Route path="/products/:id" element={<SaibaMais />}></Route>
+            <Route path="/SaibaMais/sobre/:id" element={<SaibaMais />}></Route>
           </Routes>
         </div>
       <Footer />

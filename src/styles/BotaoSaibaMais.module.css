@@ -6,6 +6,7 @@
     font-family: var(--second-font);
     border-radius: 40px;
     border: none;
+    cursor: pointer;
 }
 
 .saiba_mais:hover {

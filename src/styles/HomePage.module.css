@@ -28,7 +28,7 @@
 }
 
 .home_page {
-    margin: 100px 175px 0px 175px;
+    padding: 0 10%;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;

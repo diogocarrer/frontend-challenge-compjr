@@ -2,20 +2,23 @@
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 
-//import imagem1 from "../assets/image-homepage.svg";
+//assets
+import Servicos from "../assets/servicos.svg";
+//styles
+import styles from './../styles/SaibaMais.module.css';
 
 const SaibaMais = () => {
 
-  const url = "http://localhost:3000/products";
-  const [product, setProduct] = useState(null);
+  const url = "http://localhost:3000/sobre";
+  const [pagina, setPagina] = useState(null);
   const { id } = useParams();
 
   useEffect(() => {
     async function fetchData() {
       const res = await fetch(url);
       const data = await res.json();
-      const selectedProduct = data.find(product => product.id === parseInt(id));
-      setProduct(selectedProduct);
+      const selectedPagina = data.find(pagina => pagina.id === parseInt(id));
+      setPagina(selectedPagina);
     }
 
     fetchData();
@@ -23,11 +26,18 @@ const SaibaMais = () => {
   }, [id]);
 
   return (
-    <div>
+    <div className={styles.pagina_saiba_mais}>
+      <img src={Servicos} alt="pagina Image" className={styles.imagem_saiba_mais}/>
       <p>Id do Produto: {id}</p>
-      {product && product.descricao.map((paragraph, index) => (
-        <p key={index}>{paragraph}</p>
-      ))}
+      {pagina && (
+        <div>
+            <h1>{pagina.titulo}</h1>
+            <h2>{pagina.subtitulo}</h2>
+            {pagina.descricao.map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
+            ))}
+        </div>
+)}
     </div>
   )
 }

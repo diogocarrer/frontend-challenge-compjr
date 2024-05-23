@@ -1,0 +1,26 @@
+/* .pagina_saiba_mais {
+    text-align: flex-start;
+    margin: 0 175px;
+}
+
+.imagem_saiba_mais {
+    max-width: 100%;
+    max-height: 550px;
+    margin: auto;  Centraliza a imagem horizontalmente 
+    margin-top: 70px;
+    display: block;  Garante que a imagem não quebre a linha e mantenha a proporção 
+} */
+
+.pagina_saiba_mais {
+    text-align: flex-start;
+    padding: 0 10%; /* Adiciona padding de 5% para cada lado */
+    box-sizing: border-box; /* Garante que o padding não afete o tamanho total do elemento */
+}
+
+.imagem_saiba_mais {
+    max-width: 100%;
+    max-height: 600px;
+    margin: auto; /* Centraliza a imagem horizontalmente */
+    margin-top: 70px;
+    display: block; /* Garante que a imagem não quebre a linha e mantenha a proporção */
+}
