@@ -1,10 +1,9 @@
-.card {
+/* .card {
     margin-bottom: 10em;
 }
 
-
 .titulo {
-    color:#345392;
+    color: #345392;
     display: flex;
     justify-content: center;
 }
@@ -13,4 +12,40 @@
     color: #6C79AF;
     display: flex;
     justify-content: center;
+}
+
+image {
+    display: inline-block;
+
+}
+ */
+
+
+ .titulo {
+    color: #345392;
+    display: flex;
+    justify-content: center;
+}
+
+.subtitulo {
+    color: #6C79AF;
+    display: flex;
+    justify-content: center;
+}
+
+.card_servico {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card_imagem {
+    width: 400px; /* Ajuste conforme necessário */
+    height: 400px; /* Ajuste conforme necessário */
+}
+
+.card_imagem:hover {
+    transform: scale(1.1);
+  opacity: 0.8;
+
 }

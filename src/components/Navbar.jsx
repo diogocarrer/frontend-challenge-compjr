@@ -20,10 +20,7 @@ const Navbar = () => {
                     <NavLink to="/#servicos">Serviços</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/">Valores</NavLink>
-                </li>
-                <li>
-                    <NavLink to="/">Missão</NavLink>
+                    <NavLink to="/">Cases</NavLink>
                 </li>
                 <li>
                     <NavLink to="/">Contato</NavLink>

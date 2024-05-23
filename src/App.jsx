@@ -12,6 +12,7 @@ import {BrowserRouter, Routes, Route} from "react-router-dom";
 //styles
 import './App.css'
 
+
 function App() {
 
   return (
@@ -22,6 +23,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/SaibaMais" element={<SaibaMais />} />
+            <Route path="/products/:id" element={<SaibaMais />}></Route>
           </Routes>
         </div>
       <Footer />

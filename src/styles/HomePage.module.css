@@ -1,27 +1,36 @@
-.imagem_home_page {
+.imagem_homepage {
     width: 400px;
-    height: 400px;
+    height: auto;
+}
+.imagem_quemsomos {
+    width: 350px;
+    height: auto;
+}
+.imagem_missao {
+    width: 500px;
+    height: auto;
 }
 
 .titulo {
-    color: #1C6289;
+    color: var(--dark-blue-color);
     font-weight: 700;
     font-size: 40px;
     line-height: 58px;
 }
 
 .subtitulo {
-    color: #458FF6;
-    font-family: "Roboto", sans-serif;
+    color: var(--light-blue-color);
+    font-family: var(--second-font);
     font-weight: 500;
     font-size: 20px;
     line-height: 27px;
+    margin: 0 0 30px 0;
 }
 
 .home_page {
-    padding: 40px 175px;
+    margin: 100px 175px 0px 175px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 50px;
+    gap: 90px;
 }

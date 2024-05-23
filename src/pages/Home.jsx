@@ -1,7 +1,7 @@
 //components
 import HomePage from "../components/HomePage"
 import CardServicos from "../components/CardServicos"
-import QuemSomos from "../components/QuemSomos"
+import CasesSucesso from "../components/CasesSucesso"
 import FormularioContato from "../components/FormularioContato"
 
 const Home = () => {
@@ -9,12 +9,18 @@ const Home = () => {
     return (
         <div>
             <HomePage />
+            <hr></hr>
             <CardServicos />
-            <QuemSomos />
+            <hr></hr>
+            <CasesSucesso />
+            <hr></hr>
             <FormularioContato />
         </div>
     )
 }
 
 export default Home
+
+
+
 
