@@ -3,7 +3,7 @@
       {
         "id": 1,
         "titulo": "O que é a Comp Júnior",
-        "subtitulo": "Arlindo",
+        "subtitulo": "Conheça mais sobre nossa empresa e o que é uma empresa júnior",
         "descricao": [
           "Uma Empresa Júnior (EJ) é uma organização composta exclusivamente por estudantes de graduação que operam como uma empresa real, desenvolvendo projetos e concorrendo no mercado tradicional. No entanto, diferentemente das empresas tradicionais, uma EJ não visa lucro. O dinheiro gerado pelos projetos é reinvestido na própria empresa e em seus membros, proporcionando capacitações, acesso a materiais de aprendizado e participação em eventos do Movimento Empresa Júnior (MEJ).",
           "Fundada em 11 de agosto de 1999, a Comp Júnior é uma Empresa Júnior da Universidade Federal de Lavras (UFLA), composta por estudantes dos cursos de Ciência da Computação, Sistemas de Informação e Engenharia de Controle e Automação. A Comp Júnior desenvolve diversas soluções, incluindo consultoria em web design, desenvolvimento de sistemas online e mobile, capacitações em ferramentas de tecnologia, design de interfaces e consultoria em marketing. Atualmente, a Comp Júnior conta com 48 membros de diversos cursos da UFLA e é reconhecida regionalmente por seus serviços de qualidade e parcerias estratégicas."
@@ -11,8 +11,8 @@
       },
       {
         "id": 2,
-        "titulo": "Arlindo",
-        "subtitulo": "Arlindo",
+        "titulo": "Website Estático",
+        "subtitulo": "A",
         "descricao": [
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec nunc nec justo euismod consequat.",
           "Fusce commodo urna eu elit aliquam ultrices. Phasellus sodales semper felis, eu consequat justo dictum id.",
@@ -21,8 +21,8 @@
       },
       {
         "id": 3,
-        "titulo": "Arlindo",
-        "subtitulo": "Arlindo",
+        "titulo": "Sistemas Dinâmicos",
+        "subtitulo": "A",
         "descricao": [
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Duis nec tellus tincidunt, tincidunt nisi vel, pharetra odio.",
           "Maecenas eleifend, ligula non convallis sollicitudin, libero odio vehicula enim, a tincidunt urna orci non velit.",
@@ -31,22 +31,28 @@
       },
       {
         "id": 4,
-        "titulo": "Armando",
-        "subtitulo": "Arlindo",
+        "titulo": "Aplicativos Mobile",
+        "subtitulo": "O",
         "descricao": [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel risus sit amet neque fringilla vulputate.",
-          "Suspendisse ornare, ex in pharetra feugiat, justo mi fermentum lorem, ut ultricies orci tortor ut mauris.",
-          "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed accumsan libero at tempor molestie."
+          "Na era digital, os aplicativos móveis se tornaram uma parte indispensável de nossas vidas, oferecendo funcionalidades personalizadas diretamente em nossos smartphones e tablets. Na Comp Júnior, oferecemos serviços especializados no desenvolvimento de aplicativos móveis sob medida para atender às necessidades específicas de nossos clientes.",
+          "Nossos serviços abrangem todas as etapas do processo de desenvolvimento de aplicativos móveis, desde a consultoria inicial até o lançamento e suporte contínuo. Trabalhamos em estreita colaboração com nossos clientes para entender suas metas e objetivos, garantindo que o aplicativo final atenda às suas expectativas e às demandas do mercado.",
+          "Nossa equipe de designers e desenvolvedores altamente qualificados trabalha para criar aplicativos visualmente atraentes, altamente funcionais e compatíveis com uma variedade de dispositivos e sistemas operacionais. Realizamos testes rigorosos em todas as etapas do desenvolvimento para garantir que o aplicativo seja livre de erros e ofereça uma experiência de usuário impecável.",
+          "Acreditamos que os aplicativos móveis oferecem uma série de vantagens, incluindo acessibilidade, personalização e engajamento do usuário. Com a capacidade de acessar informações e serviços em qualquer lugar e a qualquer momento, os aplicativos móveis proporcionam conveniência e praticidade aos usuários. Além disso, a capacidade de integrar recursos como notificações push e geolocalização permite uma experiência altamente personalizada e relevante.",
+          "Leve sua ideia para o próximo nível com a experiência da Comp Júnior em desenvolvimento de aplicativos móveis.  Estamos comprometidos em fornecer soluções sob medida que impulsionem o sucesso de seus negócios no mundo móvel em constante evolução."
         ]
       },
       {
         "id": 5,
-        "titulo": "Arlindo",
-        "subtitulo": "Arlindo",
+        "titulo": "Análise de Dados",
+        "subtitulo": "O",
         "descricao": [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel metus ut nunc euismod tincidunt.",
-          "Nulla at turpis sed elit fermentum gravida a vitae dolor. Aliquam nec justo et purus facilisis vulputate.",
-          "Phasellus nec urna in elit blandit dignissim. Sed id lacus in urna mollis vestibulum."
+          "No mundo empresarial atual, a análise de dados desempenha um papel fundamental na tomada de decisões inteligentes e estratégicas. Esse processo envolve examinar conjuntos de dados para descobrir padrões, tendências e insights valiosos que podem impulsionar o crescimento e o sucesso de uma empresa.",
+          "Na Comp Júnior, oferecemos serviços especializados em análise de dados, proporcionando às empresas as ferramentas e o conhecimento necessário para extrair o máximo valor de seus dados. Nosso objetivo é transformar dados brutos em informações acionáveis, permitindo que nossos clientes tomem decisões informadas e embasadas.",
+          "Começamos o processo de análise de dados coletando informações de várias fontes, desde bancos de dados internos até dados externos. Em seguida, organizamos e preparamos esses dados para análise, garantindo que estejam prontos para serem examinados de forma eficaz.",
+          "Utilizando técnicas avançadas de análise estatística e visualização de dados, exploramos os conjuntos de dados em busca de padrões, tendências e insights ocultos. Essas análises ajudam a identificar oportunidades de crescimento, entender o comportamento do cliente e otimizar processos operacionais.",
+          "Com base nos insights obtidos através da análise de dados, auxiliamos nossos clientes na tomada de decisões estratégicas e embasadas. Isso pode envolver a identificação de novos mercados, a otimização de campanhas de marketing ou a melhoria da eficiência operacional.",
+          "Os benefícios da análise de dados são inúmeros. Ela permite tomar decisões com base em evidências concretas, reduzindo a incerteza e minimizando o risco de erro. Além disso, empresas que utilizam análise de dados de forma eficaz têm uma vantagem competitiva significativa, pois são capazes de adaptar-se rapidamente às mudanças do mercado e antecipar as necessidades dos clientes.",
+          "Na Comp Júnior, estamos comprometidos em ajudar nossos clientes a aproveitar ao máximo o potencial de seus dados. Nossa equipe está pronta para ajudá-lo a transformar seus dados em estratégias de sucesso. Entre em contato conosco hoje mesmo para contratar nosso serviço!"
         ]
       }
     ],

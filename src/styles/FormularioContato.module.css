@@ -12,6 +12,7 @@
 
 .titulo_formulario {
     color: var(--dark-blue-color);
+    margin-top: 5px;
 }
 
 .subtitulo_formulario {

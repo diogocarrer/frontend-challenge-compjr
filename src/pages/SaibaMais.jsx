@@ -28,13 +28,12 @@ const SaibaMais = () => {
   return (
     <div className={styles.pagina_saiba_mais}>
       <img src={Servicos} alt="pagina Image" className={styles.imagem_saiba_mais}/>
-      <p>Id do Produto: {id}</p>
       {pagina && (
         <div>
-            <h1>{pagina.titulo}</h1>
-            <h2>{pagina.subtitulo}</h2>
+            <h1 className={styles.titulo}>{pagina.titulo}</h1>
+            <h2 className={styles.subtitulo}>{pagina.subtitulo}</h2>
             {pagina.descricao.map((paragraph, index) => (
-                <p key={index}>{paragraph}</p>
+                <p className={styles.paragrafo_saiba_mais} key={index}>{paragraph} </p>
             ))}
         </div>
 )}

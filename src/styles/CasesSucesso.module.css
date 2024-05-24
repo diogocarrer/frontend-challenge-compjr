@@ -27,7 +27,7 @@
   }
   
   .imagem_case {
-    width: 80%; 
+    width: 75%; 
     height: auto; 
     display: block;
     margin: 0 auto; 
@@ -36,11 +36,16 @@
   }
   
   .descricao_case {
-    color: gold;
-    background-color: black;
+    display: flex;
+    justify-content: center;
+    color: #000000;
+    margin: 3% 12% 0 12%;
   }
   .titulo_case {
-    color: gold;
-    background-color: black;
+    display: flex;
+    justify-content: center;
+    color: #000000;
+    font-size: 24px;
+    font-family: var(--second-font);
   }
  
