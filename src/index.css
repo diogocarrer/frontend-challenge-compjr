@@ -2,7 +2,7 @@
   --dark-blue-color: #1C6289;
   --white-color: #F2F2F2;
   --light-blue-color: #458FF6;
-
+  --primary-font: "Mulish", sans-serif;
   --second-font: "Roboto", sans-serif;
 }
 
@@ -10,7 +10,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--white-color);
-  font-family: "Mulish", sans-serif;
+  font-family: var(--primary-font);
 }
 
 hr {

@@ -2,9 +2,10 @@
     background-color: var(--dark-blue-color);
     color: var(--white-color);
     padding: 15px 25px;
+    margin: 0 auto;
     font-size: 20px;
     font-family: var(--second-font);
-    border-radius: 40px;
+    border-radius: 15px;
     border: none;
     cursor: pointer;
 }

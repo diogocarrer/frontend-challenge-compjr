@@ -47,7 +47,7 @@ const CardServicos = () => {
                         {pagina.id === 5 && (
                             <img src={AnaliseDados} alt="pagina Image" className={styles.paginaImage} />
                         )}
-                        <Link to={`/SaibaMais/sobre/${pagina.id}`}>
+                        <Link to={`/SaibaMais/${pagina.id}`}>
                             <BotaoSaibaMais />
                         </Link>
                     </div>

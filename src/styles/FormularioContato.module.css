@@ -1,72 +1,113 @@
 .titulo {
     display: flex;
     justify-content: center;
-    color: #1C6289;
+    color: var(--dark-blue-color);
 }
 
 .subtitulo {
     display: flex;
     justify-content: center;
-    color: #5e81c7;
+    color: var(--light-blue-color);
 }
 
 .titulo_formulario {
-    color: #1C6289;
+    color: var(--dark-blue-color);
 }
 
 .subtitulo_formulario {
-    color: #5e81c7;
+    color: var(--light-blue-color);
+    font-weight: 600;
+    margin-bottom: 20px;
 }
 
 
 form {
-    max-width: 50%;
-    margin: 0 auto;
-    margin-bottom: 10em;
-    border: 3px solid #1C6289;
+    border: 3px solid var(--dark-blue-color);
     border-radius: 8px;
     padding: 30px;
+    max-width: 60%;
+    margin: 0 auto;
+    margin-bottom: 10em;
 }
   
 label {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
   
 label span {
-    margin-bottom: .3em;
+    color: #000000;
+
     font-weight: bold;
     text-align: left;
+}
+
+label span .icon {
+    margin-right: 0.5em;
+    color: var(--dark-blue-color);
 }
   
 input,
 textarea {
-    box-sizing: border-box;
-    border: none;
-    border-bottom: 3px solid #1C6289;
-    padding: .8em 0;
+    font-family: var(--primary-font);
     background-color: transparent;
+    border: none;
+    border-bottom: 3px solid var(--dark-blue-color);
+    box-sizing: border-box;
+    padding: .8em 0;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-bottom-color: var(--dark-blue-color);
 }
 
 input::placeholder,
 textarea::placeholder {
-    color: #5e81c7;
+    color: var(--light-blue-color);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+textarea {
+    resize: vertical;
 }
 
 .botao {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1C6289;
-    color: #f2f2f2;
-    padding: 10px 20px; /* Adicione padding para melhorar a aparência do botão */
-    border: none; /* Remova a borda padrão */
-    border-radius: 5px; /* Adicione bordas arredondadas */
-    cursor: pointer; /* Adicione um cursor pointer para indicar que é clicável */
-    margin: 0 auto; /* Centraliza o botão dentro do formulário */
+    background-color: var(--dark-blue-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: var(--second-font);
+    font-weight: 500;
+    font-size: 15px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px 20px; /* exige mudanças */
+
 }
 
 .botao:hover {
-    background-color: #5e81c7;
+    background-color: var(--light-blue-color);
+    transform: scale(1.05);
+}
+
+.error {
+    color: red;
+    font-size: 15px;
+    margin-top: 5px;
+}
+.errorMessage {
+    color: red;
+    font-weight: 500;
+}
+.successMessage {
+    color: green;
+    font-weight: 500;
 }
