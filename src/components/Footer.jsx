@@ -10,25 +10,25 @@ const Footer = () => {
   
     return (
         <footer className={styles.footer}>
-            <div>
+            <div className={styles.secoes}>
                 <img src={LogoBranca} alt="Logo" />
                 <h3>Criatividade Jovem.</h3>
                 <h3>Compromisso Profissional.</h3>
             </div>
-            <div>
+            <div className={styles.secoes}>
                 <h3>Contato</h3>
                 <p>contato@compjunior.com.br</p>
                 <h3>Telefone</h3>
                 <p>(35) 3829-5188</p>
             </div>
-            <div>
+            <div className={styles.secoes}>
                 <h3>Endereço</h3>
                 <p>UFLA - Universidade Federal de Lavras</p>
                 <p>Departamento de Ciência da Computação</p>
                 <p>1º Andar, Sala 14</p>
                 <p>37200-000</p>
             </div>
-            <div>
+            <div className={styles.secoes}>
                 <h3>Redes Sociais</h3>
                 <div className={styles.social_icons}>
                     <a href="https://www.facebook.com/compjunior" target="_blank" rel="noopener noreferrer" className={styles.icon}>

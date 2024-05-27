@@ -4,20 +4,43 @@
   --light-blue-color: #458FF6;
   --primary-font: "Mulish", sans-serif;
   --second-font: "Roboto", sans-serif;
+
+  /* Variáveis para modo claro */
+  --background-color-light: #F2F2F2;
+  --text-color-light: #000000;
+  --hr-color-light: #1C6289;
+
+  /* Variáveis para modo escuro */
+  --background-color-dark: #121212;
+  --text-color-dark: #F2F2F2;
+  --hr-color-dark: #458FF6;
 }
 
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--white-color);
+  background-color: var(--background-color-light);
+  color: var(--text-color-light);
   font-family: var(--primary-font);
+  transition: background-color 0.5s, color 0.5s;
 }
 
 hr {
   border: 0;
   height: 3px;
   width: 25%;
-  background: var(--dark-blue-color);
+  background: var(--hr-color-light);
   margin: 100px auto;
   border-radius: 4px;
+  transition: background 0.5s;
+}
+
+/* Estilos para modo escuro */
+body.dark-mode {
+  background-color: var(--background-color-dark);
+  color: var(--text-color-dark);
+}
+
+body.dark-mode hr {
+  background: var(--hr-color-dark);
 }

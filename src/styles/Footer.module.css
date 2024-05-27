@@ -1,25 +1,19 @@
 .footer {
     background: linear-gradient(180deg, #0B3650 0%, #1C6289 100%);
-    color: #F2F2F2;
+    color: var(--white-color);
     padding: 30px 10%; /* Adiciona padding de 20px em cima/baixo e 175px nas laterais */
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     box-sizing: border-box; /* Garante que o padding seja incluído nas dimensões totais do footer */
-    font-size: 14px;
-  }
+    font-size: 13px;
+}
 
 .footer div {
     margin: 0;
 }
   
   .footer img {
-    width: 238px;
-    height: 43.82px;
-    top: 7351px;
-    left: 223px;
-    gap: 0px;
-    opacity: 0px;
     padding-bottom: 10px;
   }
   
@@ -40,10 +34,38 @@
 
   .social_icons {
     display: flex;
-    justify-content: space-between;
-  }
+    justify-content: center; /* Centraliza os ícones horizontalmente */
+    align-items: center; /* Centraliza os ícones verticalmente */
+}
 
 .icon:hover {
     color: #2E4E92;
     transform: scale(1.1);
+}
+
+@media (max-width: 700px) {
+  .footer {
+      flex-direction: column; /* Muda a direção para coluna em telas menores que 1110px */
+      align-items: center; /* Alinha os elementos verticalmente no centro */
+  }
+
+  .footer .secoes {
+      margin: 0 0 30px 0; /* Adiciona espaço abaixo dos elementos na direção de coluna */
+      text-align: center; /* Alinha os textos verticalmente no meio */
+  }
+}
+
+@media (min-width: 701px) and (max-width: 1110px) {
+  .footer {
+      flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha quando não houver espaço suficiente */
+      align-items: flex-start;
+  }
+
+  .footer .secoes {
+      width: 50%; /* Define a largura dos elementos para 50% */
+      box-sizing: border-box; /* Garante que a largura inclua o padding e a borda */
+      margin: 0 0 30px 0;
+      text-align: center;
+  }
+  
 }

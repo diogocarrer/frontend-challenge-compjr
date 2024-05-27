@@ -71,7 +71,7 @@
 
 .card a {
     position: absolute; /* Posiciona o link/botão absolutamente */
-    bottom: 10px; /* Ajuste conforme necessário */
+    bottom: 0px; /* Ajuste conforme necessário */
     left: 50%; /* Move o botão para o meio do card horizontalmente */
     transform: translateX(-50%); /* Corrige a posição do botão centralizando-o horizontalmente */
 }
