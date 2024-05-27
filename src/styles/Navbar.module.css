@@ -2,7 +2,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 10%;
+    padding: 30px 10%;
+    background: linear-gradient(0deg, #0B3650 0%, #1C6289 100%);
+    color: #F2F2F2;
 }
 
 .logo {
@@ -14,7 +16,7 @@
     list-style: none;
     /* //margin: 50px 175px 0 0; */
     font-size: 18px;
-    color: #1C6289;
+    color: #F2F2F2;
     font-weight: 700;
 }
 
@@ -24,7 +26,7 @@
 
 .navbar_links a {
     text-decoration: none;
-    color: #2E4E92; /* Cor do link */
+    color: #F2F2F2; /* Cor do link */
 }
 
 .navbar_links a.active {
