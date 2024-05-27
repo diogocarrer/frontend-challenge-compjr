@@ -7,7 +7,7 @@ import Home from './pages/Home';
 import SaibaMais from './pages/SaibaMais';
 
 //react router
-import {BrowserRouter, Routes, Route} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 //styles
 import './App.css'
@@ -18,15 +18,14 @@ function App() {
   return (
     <>
       <BrowserRouter>
-      <Navbar />
+        <Navbar />
         <div className="container">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/SaibaMais" element={<SaibaMais />} />
-            <Route path="/SaibaMais/:id" element={<SaibaMais />}></Route>
+            <Route path="/:id" element={<SaibaMais />}></Route>
           </Routes>
         </div>
-      <Footer />
+        <Footer />
       </BrowserRouter>
     </>
   )

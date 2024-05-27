@@ -57,6 +57,7 @@ textarea {
     border-bottom: 3px solid var(--dark-blue-color);
     box-sizing: border-box;
     padding: .8em 0;
+    font-size: 16px;
 }
 
 input:focus,
@@ -111,4 +112,9 @@ textarea {
 .successMessage {
     color: green;
     font-weight: 500;
+}
+
+h4 {
+    font-weight: bold;
+    text-align: left;
 }

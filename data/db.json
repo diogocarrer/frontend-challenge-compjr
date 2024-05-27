@@ -2,37 +2,47 @@
     "sobre": [
       {
         "id": 1,
-        "titulo": "O que é a Comp Júnior",
-        "subtitulo": "Conheça mais sobre nossa empresa e o que é uma empresa júnior",
+        "titulo": "Quem Somos",
+        "subtitulo": "Conheça mais sobre a Comp Júnior e sobre o que é uma empresa júnior",
         "descricao": [
+          "O que é uma Empresa Júnior:",
           "Uma Empresa Júnior (EJ) é uma organização composta exclusivamente por estudantes de graduação que operam como uma empresa real, desenvolvendo projetos e concorrendo no mercado tradicional. No entanto, diferentemente das empresas tradicionais, uma EJ não visa lucro. O dinheiro gerado pelos projetos é reinvestido na própria empresa e em seus membros, proporcionando capacitações, acesso a materiais de aprendizado e participação em eventos do Movimento Empresa Júnior (MEJ).",
-          "Fundada em 11 de agosto de 1999, a Comp Júnior é uma Empresa Júnior da Universidade Federal de Lavras (UFLA), composta por estudantes dos cursos de Ciência da Computação, Sistemas de Informação e Engenharia de Controle e Automação. A Comp Júnior desenvolve diversas soluções, incluindo consultoria em web design, desenvolvimento de sistemas online e mobile, capacitações em ferramentas de tecnologia, design de interfaces e consultoria em marketing. Atualmente, a Comp Júnior conta com 48 membros de diversos cursos da UFLA e é reconhecida regionalmente por seus serviços de qualidade e parcerias estratégicas."
+          "Nossa História:",
+          "Fundada em 11 de agosto de 1999, a Comp Júnior é uma Empresa Júnior da Universidade Federal de Lavras (UFLA), composta por estudantes dos cursos de Ciência da Computação, Sistemas de Informação e Engenharia de Controle e Automação. A Comp Júnior desenvolve diversas soluções, incluindo consultoria em web design, desenvolvimento de sistemas online e mobile, capacitações em ferramentas de tecnologia, design de interfaces e consultoria em marketing. Atualmente, a Comp Júnior conta com 48 membros de diversos cursos da UFLA e é reconhecida regionalmente por seus serviços de qualidade e parcerias estratégicas.",
+          "Missão e Visão:",
+          "Formar profissionais completos, através da vivência empresarial e projetos de transformação digital, que desenvolvem habilidades técnicas e comportamentais, impulsionando o crescimento pessoal e profissional de nossos membros e impactam positivamente a sociedade. Ser, até 2025, uma EJ de referência no nicho tech, com presença em todo território nacional, através da excelência de nossos serviços, sendo reconhecidos como o caminho para quem deseja se destacar dentro da universidade e para o mercado de trabalho.",
+          "Valores:",
+          "Nós vamos além, colocamos a mão na massa! Não nos acomodamos e sempre buscamos a proatividade, fazendo tudo que é necessário para cumprir o que prometemos. Acreditamos ser fundamental expressar com clareza nossas dificuldades e falhas, então procuramos feedbacks para que possamos evoluir juntos em um ambiente colaborativo. Despertamos o potencial inerente de cada membro através do desenvolvimento contínuo de nossas soft e hard skills, sempre disponíveis para auxiliar na evolução dessas habilidades. Temos orgulho de ser Comp, carregamos um legado e sabemos da oportunidade que é fazer parte desse time, trabalhando todos os dias para melhorar e fazer jus ao nome que representamos."
         ]
       },
       {
         "id": 2,
         "titulo": "Website Estático",
-        "subtitulo": "A",
+        "subtitulo": "Presença Online Profissional",
         "descricao": [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec nunc nec justo euismod consequat.",
-          "Fusce commodo urna eu elit aliquam ultrices. Phasellus sodales semper felis, eu consequat justo dictum id.",
-          "Integer sit amet risus quis risus feugiat faucibus. Mauris id vestibulum ex, eget gravida odio."
+          "No mundo digital de hoje, uma presença online sólida é essencial para o sucesso de qualquer negócio. Na Comp Júnior, oferecemos serviços especializados em desenvolvimento de páginas web estáticas, projetadas para fornecer uma presença online eficaz e profissional para a sua empresa.",
+          "Nossas páginas web estáticas são cuidadosamente desenvolvidas para oferecer um layout responsivo, adaptando-se perfeitamente a diferentes tamanhos de telas, desde desktops até dispositivos móveis. Cada detalhe é considerado para garantir uma experiência de usuário consistente e atraente em qualquer dispositivo.",
+          "Desde o design inicial até a implementação final, nossa equipe de especialistas em desenvolvimento web trabalha em estreita colaboração com você para entender suas necessidades e objetivos específicos. Nosso objetivo é criar uma solução que não apenas atenda, mas supere suas expectativas, oferecendo uma presença online que destaque a sua marca e transmita sua mensagem de forma eficaz.",
+          "Ao escolher nossos serviços de desenvolvimento de websites estáticos, você pode ter a certeza de que está recebendo uma solução de alta qualidade, desenvolvida com as mais recentes práticas e tecnologias da indústria. Estamos comprometidos em criar websites que não apenas impressionem visualmente, mas também impulsionem o engajamento do usuário e gerem resultados tangíveis para o seu negócio.",
+          "Seja para lançar um novo produto, promover seus serviços ou simplesmente compartilhar informações importantes, nossas páginas web estáticas são a escolha ideal para empresas que buscam uma presença online eficaz e profissional. Entre em contato conosco hoje mesmo para descobrir como podemos ajudar a levar sua empresa para o próximo nível na internet. Na Comp Júnior, estamos aqui para transformar suas ideias em realidade digital."
         ]
       },
       {
         "id": 3,
         "titulo": "Sistemas Dinâmicos",
-        "subtitulo": "A",
+        "subtitulo": "Agilidade e Eficiência para seu Negócio",
         "descricao": [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Duis nec tellus tincidunt, tincidunt nisi vel, pharetra odio.",
-          "Maecenas eleifend, ligula non convallis sollicitudin, libero odio vehicula enim, a tincidunt urna orci non velit.",
-          "Nam vehicula fermentum velit, vitae cursus dui fringilla id. Cras vitae libero aliquam, tempus ipsum ac, ultricies quam."
+          "Em um cenário empresarial em constante evolução, a agilidade e a eficácia dos sistemas dinâmicos são cruciais para impulsionar o sucesso e a competitividade. Na Comp Júnior, oferecemos soluções especializadas em sistemas dinâmicos, projetados para atender às necessidades específicas do seu negócio e promover resultados excepcionais.",
+          "Nossos sistemas web dinâmicos são construídos com um foco central no gerenciamento eficiente, na lógica de negócios robusta e no desenvolvimento ágil. Cada solução é cuidadosamente concebida para garantir que a implementação seja altamente eficaz e capaz de atender a todas as demandas operacionais e estratégicas da sua empresa.",
+          "Desde websites dinâmicos até sistemas de gestão complexos, nossa abordagem visa não apenas atender, mas exceder as expectativas dos nossos clientes. Nossa equipe experiente trabalha em estreita colaboração com você para compreender as nuances do seu negócio e desenvolver soluções personalizadas que impulsionem a eficiência, promovam a inovação e estimulem o crescimento.",
+          "Ao escolher os nossos serviços de sistemas dinâmicos, você pode esperar não apenas uma implementação técnica impecável, mas também um parceiro comprometido com o seu sucesso a longo prazo. Estamos aqui para ajudá-lo a alcançar seus objetivos empresariais, fornecendo soluções de software dinâmicas, escaláveis e totalmente adaptáveis às necessidades em constante mudança do seu negócio.",
+          "Entre em contato conosco hoje mesmo para descobrir como nossos serviços de sistemas dinâmicos podem transformar a sua empresa e impulsionar o seu crescimento. Na Comp Júnior, estamos prontos para tornar sua visão uma realidade."
         ]
       },
       {
         "id": 4,
         "titulo": "Aplicativos Mobile",
-        "subtitulo": "O",
+        "subtitulo": "Inovação ao Alcance dos Seus Dedos",
         "descricao": [
           "Na era digital, os aplicativos móveis se tornaram uma parte indispensável de nossas vidas, oferecendo funcionalidades personalizadas diretamente em nossos smartphones e tablets. Na Comp Júnior, oferecemos serviços especializados no desenvolvimento de aplicativos móveis sob medida para atender às necessidades específicas de nossos clientes.",
           "Nossos serviços abrangem todas as etapas do processo de desenvolvimento de aplicativos móveis, desde a consultoria inicial até o lançamento e suporte contínuo. Trabalhamos em estreita colaboração com nossos clientes para entender suas metas e objetivos, garantindo que o aplicativo final atenda às suas expectativas e às demandas do mercado.",
@@ -44,7 +54,7 @@
       {
         "id": 5,
         "titulo": "Análise de Dados",
-        "subtitulo": "O",
+        "subtitulo": "Insights Estratégicos para Tomadas de Decisão",
         "descricao": [
           "No mundo empresarial atual, a análise de dados desempenha um papel fundamental na tomada de decisões inteligentes e estratégicas. Esse processo envolve examinar conjuntos de dados para descobrir padrões, tendências e insights valiosos que podem impulsionar o crescimento e o sucesso de uma empresa.",
           "Na Comp Júnior, oferecemos serviços especializados em análise de dados, proporcionando às empresas as ferramentas e o conhecimento necessário para extrair o máximo valor de seus dados. Nosso objetivo é transformar dados brutos em informações acionáveis, permitindo que nossos clientes tomem decisões informadas e embasadas.",

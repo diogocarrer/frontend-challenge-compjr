@@ -36,7 +36,7 @@ const SaibaMais = () => {
                 <p className={styles.paragrafo_saiba_mais} key={index}>{paragraph} </p>
             ))}
         </div>
-)}
+      )}
     </div>
   )
 }

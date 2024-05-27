@@ -35,7 +35,6 @@ hr {
   transition: background 0.5s;
 }
 
-/* Estilos para modo escuro */
 body.dark-mode {
   background-color: var(--background-color-dark);
   color: var(--text-color-dark);
@@ -43,4 +42,18 @@ body.dark-mode {
 
 body.dark-mode hr {
   background: var(--hr-color-dark);
+}
+
+body.dark-mode label span {
+  color: var(--white-color);
+}
+
+body.dark-mode p {
+  color: var(--white-color);
+}
+
+body.dark-mode input,
+body.dark-mode textarea {
+    color: var(--white-color);
+    caret-color: var(--white-color);
 }
