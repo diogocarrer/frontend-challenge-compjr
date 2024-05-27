@@ -216,6 +216,7 @@ const FormularioContato = () => {
 
     return (
         <div>
+            <hr></hr>
             <h1 className={styles.titulo}>Precisando de algo em específico?</h1>
             <h2 className={styles.subtitulo}>Vamos discutir seu próximo projeto!</h2>
             

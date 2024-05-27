@@ -37,7 +37,6 @@
   }
    */
 
-
    .navbar {
     display: flex;
     justify-content: space-between;
@@ -45,6 +44,16 @@
     color: var(--white-color);
     padding: 30px 10%;
     background: linear-gradient(180deg, #1C6289 0%, #0B3650 100%);
+    position: fixed; /* Torna a navbar fixa */
+    top: 0; /* Fixa a navbar no topo */
+    width: 100%; /* Garante que a navbar ocupe toda a largura da tela */
+    z-index: 1000; /* Garante que a navbar fique acima de outros elementos */
+    box-sizing: border-box; /* Inclui o padding na altura e largura totais */
+  }
+  
+  /* Ajuste do espaçamento do conteúdo principal para não ser coberto pela navbar */
+  .content {
+    padding-top: 90px; /* Ajuste conforme a altura real da sua navbar */
   }
   
   .navbar_links {
@@ -52,7 +61,7 @@
     gap: 1rem;
     color: var(--white-color);
   }
-
+  
   .navlink {
     color: var(--white-color);
     text-decoration: none;

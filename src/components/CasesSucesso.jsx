@@ -34,6 +34,7 @@ const CasesSucesso = () => {
 
     return (
         <div>
+            <hr></hr>
             <h1 className={styles.titulo}>Cases de Sucesso</h1>
             <h2 className={styles.subtitulo}>Alguns dos projetos que já fizemos</h2>
             {cases && <p className={styles.titulo_case}>{cases[activeIndex].titulo}</p>}

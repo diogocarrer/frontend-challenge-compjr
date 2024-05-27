@@ -8,13 +8,18 @@ const Home = () => {
   
     return (
         <div>
-            <HomePage />
-            <hr></hr>
-            <CardServicos />
-            <hr></hr>
-            <CasesSucesso />
-            <hr></hr>
-            <FormularioContato />
+            <div id="home">
+                <HomePage />
+            </div>
+            <div id="servicos">
+                <CardServicos />
+            </div>
+            <div id="cases">
+                <CasesSucesso />
+            </div>
+            <div id="contato">
+                <FormularioContato />
+            </div>
         </div>
     )
 }

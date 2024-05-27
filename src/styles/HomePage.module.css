@@ -3,7 +3,7 @@
     height: auto;
 }
 .imagem_quemsomos {
-    width: 350px;
+    width: 325px;
     height: auto;
 }
 .imagem_missao {
@@ -28,9 +28,17 @@
 }
 
 .home_page {
-    padding: 100px 10%;
+    padding: 0 10%;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
+    gap: 90px;
+}
+
+.apresentacao {
+    padding: 100px 10% 100px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     gap: 90px;
 }

@@ -10,7 +10,7 @@ import styles from './../styles/HomePage.module.css';
 const HomePage = () => {
     return (
         <div>
-            <div className={styles.home_page}>
+            <div className={styles.apresentacao}>
                 <div>
                     <h1 className={styles.titulo}>Criatividade jovem, Compromisso profissional.</h1>
                     <p className={styles.subtitulo}>Mais do que um produto, desenvolvemos soluções para o seu negócio, por meio da transformação digital e da paixão pelo o que fazemos.</p>

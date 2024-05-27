@@ -83,6 +83,7 @@ const CardServicos = () => {
 
     return (
         <div>
+            <hr></hr>
             <h1 className={styles.titulo}>Nossos Serviços</h1>
             <p className={styles.subtitulo}>Como podemos te ajudar?</p>
             <div className={styles.cardContainer}>

@@ -49,10 +49,13 @@ export default Navbar;
  */
 
 import LogoBranca from "../assets/logo-branca.svg";
-import { NavLink } from "react-router-dom";
 import { FaSun, FaMoon } from 'react-icons/fa';
 import { useState } from 'react';
 import styles from './../styles/Navbar.module.css';
+
+// Navbar.jsx
+
+import { HashLink } from 'react-router-hash-link'; // Importa o HashLink para lidar com âncoras
 
 const Navbar = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -67,16 +70,16 @@ const Navbar = () => {
       <img className={styles.logo} src={LogoBranca} alt="Comp Júnior Logo" />
       <div className={styles.navbar_links}>
         <div>
-          <NavLink to="/" className={styles.navlink}>Home</NavLink>
+          <HashLink to="#home" className={styles.navlink} smooth>Home</HashLink>
         </div>
         <div>
-          <NavLink to="Especifico" className={styles.navlink}>Serviços</NavLink>
+          <HashLink to="#servicos" className={styles.navlink} smooth>Serviços</HashLink>
         </div>
         <div>
-          <NavLink to="Especifico" className={styles.navlink}>Cases</NavLink>
+          <HashLink to="#cases" className={styles.navlink} smooth>Cases</HashLink>
         </div>
         <div>
-          <NavLink to="Especifico" className={styles.navlink}>Contato</NavLink>
+          <HashLink to="#contato" className={styles.navlink} smooth>Contato</HashLink>
         </div>
         <div>
           <button onClick={toggleDarkMode} className={styles.toggle_button}>
