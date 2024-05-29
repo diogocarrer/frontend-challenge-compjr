@@ -37,16 +37,16 @@ const CardServicos = () => {
                 {paginas.slice(1, 5).map((pagina) => (
                     <div key={pagina.id} className={styles.card}>
                         {pagina.id === 2 && (
-                            <img src={WebEstatico} alt="pagina Image" />
+                            <img src={WebEstatico} alt="pagina Image" className={styles.productImage} />
                         )}
                         {pagina.id === 3 && (
-                            <img src={SistemasDinamicos} alt="pagina Image" />
+                            <img src={SistemasDinamicos} alt="pagina Image" className={styles.productImage} />
                         )}
                         {pagina.id === 4 && (
-                            <img src={AplicativosMobile} alt="pagina Image" />
+                            <img src={AplicativosMobile} alt="pagina Image" className={styles.productImage} />
                         )}
                         {pagina.id === 5 && (
-                            <img src={AnaliseDados} alt="pagina Image" />
+                            <img src={AnaliseDados} alt="pagina Image" className={styles.productImage} />
                         )}
                         <Link to={`/${pagina.id}`}>
                             <BotaoSaibaMais />

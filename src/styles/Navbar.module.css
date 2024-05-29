@@ -90,3 +90,46 @@
     color: var(--light-blue-color);
   }
   
+
+  /* Adicione media queries para ajustar a navbar em telas menores */
+  @media screen and (max-width: 800px) {
+    .navbar_links {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 90px;
+      left: 0;
+      background: linear-gradient(180deg, #1C6289 0%, #0B3650 100%);
+      width: 100%;
+      opacity: 0;
+      transform: translateY(-20px); /* Começa fora da tela para cima */
+      transition: opacity 0.3s ease, transform 0.3s ease; /* Adiciona uma transição suave para a abertura e fechamento */
+      pointer-events: none; /* Impede interações quando não está visível */
+    }
+  
+    .navbar_links.show {
+      opacity: 1;
+      transform: translateY(0); /* Desliza para a posição correta */
+      pointer-events: auto; /* Permite interações quando está visível */
+    }
+  
+    .navbar_links div {
+      margin: 2px 0 0 10px; /* Reduz a margem vertical para 5px */
+    }
+  
+    .toggle_button {
+      display: block; /* Mostra o botão de hambúrguer */
+    }
+
+    .logo {
+      height: auto; /* Permite que a altura seja ajustada automaticamente */
+      max-width: 70%; /* Define a largura máxima como 50% da largura da tela */
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .logo {
+      height: auto; /* Permite que a altura seja ajustada automaticamente */
+      max-width: 70%; /* Define a largura máxima como 50% da largura da tela */
+    }
+  }

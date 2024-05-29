@@ -1,9 +1,6 @@
-.saiba_mais {
+/* .saiba_mais {
     background-color: var(--dark-blue-color);
     color: var(--white-color);
-    padding: 15px 25px;
-    margin: 0 auto;
-    font-size: 20px;
     font-family: var(--second-font);
     border-radius: 15px;
     border: none;
@@ -13,4 +10,40 @@
 .saiba_mais:hover {
     background-color: var(--light-blue-color);
     transform: scale(1.05);
+}
+ */
+
+ .saiba_mais {
+    background-color: var(--dark-blue-color);
+    color: var(--white-color);
+    font-family: var(--second-font);
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    padding: 15px 25px;
+    font-size: 20px;
+    width: 200px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.saiba_mais:hover {
+    background-color: var(--light-blue-color);
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .saiba_mais {
+        padding: 12px 20px;
+        font-size: 18px;
+        width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .saiba_mais {
+        padding: 10px 15px;
+        font-size: 16px;
+        width: 120px;
+    }
 }

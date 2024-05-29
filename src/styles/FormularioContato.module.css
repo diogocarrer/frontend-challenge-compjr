@@ -1,13 +1,17 @@
 .titulo {
     display: flex;
     justify-content: center;
+    text-align: center;
     color: var(--dark-blue-color);
+    margin: 0 10% 30px 10%;
 }
 
 .subtitulo {
     display: flex;
     justify-content: center;
+    text-align: center;
     color: var(--light-blue-color);
+    margin: 0 10% 30px 10%;
 }
 
 .titulo_formulario {

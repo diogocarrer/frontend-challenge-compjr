@@ -1,13 +1,13 @@
 .imagem_homepage {
-    width: 400px;
+    max-width: 400px;
     height: auto;
 }
 .imagem_quemsomos {
-    width: 325px;
+    max-width: 325px;
     height: auto;
 }
 .imagem_missao {
-    width: 500px;
+    max-width: 400px;
     height: auto;
 }
 
@@ -36,9 +36,74 @@
 }
 
 .apresentacao {
-    padding: 100px 10% 100px 10%;
+    padding: 100px 10% 0 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 90px;
+}
+
+
+@media (max-width: 1000px) {
+    .titulo {
+        font-size: 36px; /* Ajusta o tamanho da fonte do título */
+        line-height: 50px;
+    }
+
+    .subtitulo {
+        font-size: 18px; /* Ajusta o tamanho da fonte do subtítulo */
+        line-height: 24px;
+    }
+}
+
+@media (max-width: 875px) {
+    .home_page {
+        flex-direction: column; /* Altera o layout para empilhamento vertical em telas menores */
+        text-align: flex-start; /* Centraliza o texto */
+   /* Espaçamento entre os elementos */
+    }
+
+    .apresentacao {
+        padding: 100px 10% 0 10%;
+        flex-direction: column; /* Altera o layout para empilhamento vertical em telas menores */
+        text-align: flex-start;
+    }
+
+
+}
+
+
+@media (max-width: 480px) {
+    .home_page {
+        padding: 25px 5%; /* Reduz o padding ainda mais em telas muito pequenas */
+    }
+    .apresentacao {
+        padding: 100px 5% 0 5%;
+    }
+
+    .titulo {
+        font-size: 24px; /* Ajusta o tamanho da fonte do título */
+        line-height: 32px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .subtitulo {
+        font-size: 16px; /* Ajusta o tamanho da fonte do subtítulo */
+        line-height: 20px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .imagem_homepage, .imagem_quemsomos, .imagem_missao {
+        max-width: 80%; /* Ajusta a largura máxima da imagem em telas muito pequenas */
+        height: auto;
+        margin: 0 10%; /* Adiciona margens laterais de 10% */
+    }
+
+    .botao {
+        display: flex;
+        justify-content: center;
+    }
 }

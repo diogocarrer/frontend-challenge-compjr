@@ -29,10 +29,10 @@ const HomePage = () => {
         <div>
             <div className={styles.apresentacao}>
                 <div>
-                    <h1 className={styles.titulo}>Criatividade jovem, Compromisso profissional.</h1>
+                    <h1 className={styles.titulo}>Criatividade Jovem, Compromisso Profissional.</h1>
                     <p className={styles.subtitulo}>Mais do que um produto, desenvolvemos soluções para o seu negócio, por meio da transformação digital e da paixão pelo o que fazemos.</p>
                     {paginas.filter(sobre => sobre.id === 1).map(sobre => (
-                        <div key={sobre.id}>
+                        <div key={sobre.id} className={styles.botao}>
                             <Link to={`/${sobre.id}`}><BotaoSaibaMais /></Link>
                         </div>
                     ))}
@@ -53,7 +53,7 @@ const HomePage = () => {
                     <p className={styles.subtitulo}>A Comp Júnior é uma empresa sem fins lucrativos que atua no mercado de tecnologia há mais de 20 anos em Lavras e região, prestando serviço de desenvolvimento web, mobile e multiplataforma.</p>
                     <p className={styles.subtitulo}>A Comp Júnior também faz parte do Movimento Empresa Júnior e visa por acolher e desenvolver seus membros, oferecendo a primeira oportunidade profissional e contato com o mercado de trabalho, suas metodologias e estruturas.</p>
                     {paginas.filter(sobre => sobre.id === 1).map(sobre => (
-                        <div key={sobre.id}>
+                        <div key={sobre.id} className={styles.botao}>
                             <Link to={`/${sobre.id}`}><BotaoSaibaMais /></Link>
                         </div>
                     ))}
@@ -65,9 +65,9 @@ const HomePage = () => {
             <div className={styles.home_page}>
                 <div>
                     <h1 className={styles.titulo}>Nossa Missão</h1>
-                    <p className={styles.subtitulo}>Formar profissionais completos, através da VIVÊNCIA EMPRESARIAL e projetos de transformação digital, que DESENVOLVEM MEMBROS e IMPACTAM A SOCIEDADE.</p>
+                    <p className={styles.subtitulo}>Formar profissionais completos, através da VIVÊNCIA EMPRESARIAL e projetos de transformação digital, que DESENVOLVEM MEMBROS e IMPACTAM a nossa SOCIEDADE.</p>
                     {paginas.filter(sobre => sobre.id === 1).map(sobre => (
-                        <div key={sobre.id}>
+                        <div key={sobre.id} className={styles.botao}>
                             <Link to={`/${sobre.id}`}><BotaoSaibaMais /></Link>
                         </div>
                     ))}

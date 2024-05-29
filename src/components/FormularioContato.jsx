@@ -90,8 +90,8 @@ const FormularioContato = () => {
     return (
         <div>
             <hr></hr>
-            <h1 className={styles.titulo}>Precisando de algo em específico?</h1>
-            <h2 className={styles.subtitulo}>Vamos discutir seu próximo projeto!</h2>
+            <h1 className={styles.titulo}>Precisando de algo específico?</h1>
+            <h2 className={styles.subtitulo}>Vamos discutir o seu próximo projeto!</h2>
 
             <form onSubmit={handleSubmit}>
                 <h1 className={styles.titulo_formulario}>Entrar em contato</h1>

@@ -1,51 +1,114 @@
-
-
 .titulo {
-    display: flex;
-    justify-content: center;
-    color: var(--dark-blue-color);
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 58px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: var(--dark-blue-color);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 58px;
 }
 
 .subtitulo {
-    display: flex;
-    justify-content: center;
-    color: var(--light-blue-color);
-    font-family: var(--second-font);
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 27px;
-    margin: 0 0 30px 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: var(--light-blue-color);
+  font-family: var(--second-font);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+  margin: 0 0 30px 0;
 }
 
 .slide_cases {
-    max-width: 100%; 
-    margin: 0 auto; 
-    padding: 0 10%;  
+  max-width: 100%; 
+  margin: 0 auto; 
+  padding: 0 10%;  
+}
+
+.imagem_case {
+  width: 80%; 
+  height: auto; 
+  display: block;
+  margin: 0 auto; 
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.descricao_case {
+  display: flex;
+  justify-content: center;
+  color: #000000;
+  margin: 3% 12% 0 12%;
+}
+
+.titulo_case {
+  display: flex;
+  justify-content: center;
+  color: #000000;
+  font-size: 24px;
+  font-family: var(--second-font);
+}
+
+@media (max-width: 1000px) {
+  .titulo {
+      font-size: 36px; /* Ajusta o tamanho da fonte do título */
+      line-height: 50px;
   }
-  
+
+  .subtitulo {
+      font-size: 18px; /* Ajusta o tamanho da fonte do subtítulo */
+      line-height: 24px;
+  }
+
   .imagem_case {
-    width: 75%; 
-    height: auto; 
-    display: block;
-    margin: 0 auto; 
-    object-fit: cover;
-    border-radius: 30px;
+      width: 85%; /* Ajusta a largura da imagem em telas menores */
   }
-  
+
   .descricao_case {
-    display: flex;
-    justify-content: center;
-    color: #000000;
-    margin: 3% 12% 0 12%;
+      margin: 3% 10% 0 10%; /* Ajusta as margens da descrição em telas menores */
+      font-size: 18px; /* Ajusta o tamanho da fonte da descrição */
+      line-height: 24px;
   }
+
   .titulo_case {
-    display: flex;
-    justify-content: center;
-    color: #000000;
-    font-size: 24px;
-    font-family: var(--second-font);
+      font-size: 22px; /* Ajusta o tamanho da fonte do título do case */
   }
- 
+}
+
+@media (max-width: 768px) {
+
+  .imagem_case {
+      width: 90%; /* Ajusta a largura da imagem em telas menores */
+  }
+
+  .descricao_case {
+      margin: 3% 8% 0 8%; /* Ajusta as margens da descrição em telas menores */
+      font-size: 16px; /* Ajusta o tamanho da fonte da descrição */
+      line-height: 22px;
+  }
+
+  .titulo_case {
+      font-size: 20px; /* Ajusta o tamanho da fonte do título do case */
+  }
+}
+
+@media (max-width: 480px) {
+
+  .imagem_case {
+      width: 100%; /* Ajusta a largura da imagem em telas menores */
+  }
+
+  .descricao_case {
+      margin: 3% 5% 0 5%; /* Ajusta as margens da descrição em telas menores */
+      font-size: 14px; /* Ajusta o tamanho da fonte da descrição */
+      line-height: 20px;
+  }
+
+  .titulo_case {
+      font-size: 18px; /* Ajusta o tamanho da fonte do título do case */
+  }
+}
+
+
+
