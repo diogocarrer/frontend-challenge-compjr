@@ -1,17 +1,13 @@
-//components
+/* components */
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-
-//pages
+/* pages */
 import Home from './pages/Home';
 import SaibaMais from './pages/SaibaMais';
-
-//react router
+/* react router */
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-//styles
+/* styles */
 import './App.css'
-
 
 function App() {
 
@@ -32,4 +28,3 @@ function App() {
 }
 
 export default App
-

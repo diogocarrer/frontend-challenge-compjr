@@ -22,46 +22,42 @@
 
 .cardContainer {
     display: flex;
-    justify-content: center; /* Centraliza os cards horizontalmente */
-    gap: 50px 200px; /* Espaçamento entre os cards */
-    flex-wrap: wrap; /* Permite que os cards rolem para a linha seguinte se a tela for pequena */
-    padding: 16px 10%; /* Adiciona algum padding ao redor do contêiner */
+    justify-content: center;
+    gap: 50px 200px;
+    flex-wrap: wrap;
+    padding: 16px 10%;
 }
 
-
 .card {
-    position: relative; /* Define o contêiner do card como relativo */
+    position: relative;
     padding: 16px;
-    width: 30%; /* Ajuste conforme necessário */
+    width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .card a {
-    position: absolute; /* Posiciona o link/botão absolutamente */
-    bottom: 0px; /* Ajuste conforme necessário */
-    left: 50%; /* Move o botão para o meio do card horizontalmente */
-    transform: translateX(-50%); /* Corrige a posição do botão centralizando-o horizontalmente */
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 @media (max-width: 768px) {
     .card {
-        width: 100%; /* Cards ocupam toda a largura em telas pequenas */
+        width: 100%;
     }
-
     .cardContainer {
-        padding: 16px; /* Reduz o padding em telas menores */
-        gap: 20px 50px; /* Reduz ainda mais o espaçamento entre os cards */
+        padding: 16px;
+        gap: 20px 50px;
     }
-
     .titulo {
-        font-size: 30px; /* Ajusta o tamanho da fonte do título */
+        font-size: 30px;
         line-height: 40px;
     }
-
     .subtitulo {
-        font-size: 18px; /* Ajusta o tamanho da fonte do subtítulo */
+        font-size: 18px;
         line-height: 24px;
     }
 }
@@ -70,33 +66,26 @@
     .card {
         width: 100%;
     }
-
     .cardContainer {
-        padding: 8px; /* Reduz o padding em telas muito pequenas */
-        gap: 10px 20px; /* Reduz ainda mais o espaçamento entre os cards */
+        padding: 8px;
+        gap: 10px 20px;
         width: 100%;
     }
-
-    .productImage{
+    .imagem_servico{
         max-width: 300px;
     }
-
-    
 }
-
 
 @media (max-width: 400px) {
     .card {
         width: 100%;
     }
-
     .cardContainer {
-        padding: 8px; /* Reduz o padding em telas muito pequenas */
-        gap: 10px 20px; /* Reduz ainda mais o espaçamento entre os cards */
+        padding: 8px;
+        gap: 10px 20px;
         width: 100%;
     }
-
-    .productImage {
-        max-width: 250px; /* Reduz ainda mais o tamanho da imagem */
+    .imagem_servico {
+        max-width: 250px;
     }
 }

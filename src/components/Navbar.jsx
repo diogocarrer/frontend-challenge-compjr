@@ -1,12 +1,11 @@
-
+/* assets */
 import LogoBranca from "../assets/logo-branca.svg";
+/* react */
 import { FaSun, FaMoon, FaBars } from 'react-icons/fa';
 import { useState, useEffect } from 'react';
+import { HashLink } from 'react-router-hash-link';
+/* styles */
 import styles from './../styles/Navbar.module.css';
-
-// Navbar.jsx
-
-import { HashLink } from 'react-router-hash-link'; // Importa o HashLink para lidar com âncoras
 
 const Navbar = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -28,6 +27,9 @@ const Navbar = () => {
   const toggleDarkMode = () => {
     document.body.classList.toggle('dark-mode');
     setDarkMode(!darkMode);
+    if (windowWidth <= 800) {
+      setShowMenu(false);
+    }
   };
 
   const toggleMenu = () => {
@@ -43,16 +45,16 @@ const Navbar = () => {
       <img className={styles.logo} src={LogoBranca} alt="Comp Júnior Logo" />
       <div className={`${styles.navbar_links} ${showMenu ? styles.show : ''}`}>
         <div onClick={closeMenu}>
-          <HashLink to="/#home" className={styles.navlink} smooth>Home</HashLink>
+          <HashLink to="/#home" className={styles.link} smooth>Home</HashLink>
         </div>
         <div onClick={closeMenu}>
-          <HashLink to="/#servicos" className={styles.navlink} smooth>Serviços</HashLink>
+          <HashLink to="/#servicos" className={styles.link} smooth>Serviços</HashLink>
         </div>
         <div onClick={closeMenu}>
-          <HashLink to="/#cases" className={styles.navlink} smooth>Cases</HashLink>
+          <HashLink to="/#cases" className={styles.link} smooth>Cases</HashLink>
         </div>
         <div onClick={closeMenu}>
-          <HashLink to="/#contato" className={styles.navlink} smooth>Contato</HashLink>
+          <HashLink to="/#contato" className={styles.link} smooth>Contato</HashLink>
         </div>
         <div>
           <button onClick={toggleDarkMode} className={styles.toggle_button}>

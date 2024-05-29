@@ -35,13 +35,6 @@
   border-radius: 30px;
 }
 
-.descricao_case {
-  display: flex;
-  justify-content: center;
-  color: #000000;
-  margin: 3% 12% 0 12%;
-}
-
 .titulo_case {
   display: flex;
   justify-content: center;
@@ -50,63 +43,60 @@
   font-family: var(--second-font);
 }
 
+.descricao_case {
+  display: flex;
+  justify-content: center;
+  color: #000000;
+  margin: 3% 12% 0 12%;
+}
+
 @media (max-width: 1000px) {
   .titulo {
-      font-size: 36px; /* Ajusta o tamanho da fonte do título */
-      line-height: 50px;
+    font-size: 36px;
+    line-height: 50px;
   }
-
   .subtitulo {
-      font-size: 18px; /* Ajusta o tamanho da fonte do subtítulo */
-      line-height: 24px;
+    font-size: 18px;
+    line-height: 24px;
   }
-
   .imagem_case {
-      width: 85%; /* Ajusta a largura da imagem em telas menores */
+    width: 85%;
   }
-
   .descricao_case {
-      margin: 3% 10% 0 10%; /* Ajusta as margens da descrição em telas menores */
-      font-size: 18px; /* Ajusta o tamanho da fonte da descrição */
-      line-height: 24px;
+    margin: 3% 10% 0 10%;
+    font-size: 18px;
+    line-height: 24px;
   }
-
   .titulo_case {
-      font-size: 22px; /* Ajusta o tamanho da fonte do título do case */
+    font-size: 22px;
   }
 }
 
 @media (max-width: 768px) {
-
   .imagem_case {
-      width: 90%; /* Ajusta a largura da imagem em telas menores */
+    width: 90%;
   }
-
   .descricao_case {
-      margin: 3% 8% 0 8%; /* Ajusta as margens da descrição em telas menores */
-      font-size: 16px; /* Ajusta o tamanho da fonte da descrição */
-      line-height: 22px;
+    margin: 3% 8% 0 8%;
+    font-size: 16px;
+    line-height: 22px;
   }
-
   .titulo_case {
-      font-size: 20px; /* Ajusta o tamanho da fonte do título do case */
+    font-size: 20px;
   }
 }
 
 @media (max-width: 480px) {
-
   .imagem_case {
-      width: 100%; /* Ajusta a largura da imagem em telas menores */
+    width: 100%;
   }
-
   .descricao_case {
-      margin: 3% 5% 0 5%; /* Ajusta as margens da descrição em telas menores */
-      font-size: 14px; /* Ajusta o tamanho da fonte da descrição */
-      line-height: 20px;
+    margin: 3% 5% 0 5%;
+    font-size: 14px;
+    line-height: 20px;
   }
-
   .titulo_case {
-      font-size: 18px; /* Ajusta o tamanho da fonte do título do case */
+    font-size: 18px;
   }
 }
 

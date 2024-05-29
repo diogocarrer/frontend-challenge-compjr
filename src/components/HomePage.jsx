@@ -10,7 +10,6 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 const HomePage = () => {
-
     const url = "http://localhost:3000/sobre";
     const [paginas, setPaginas] = useState([]);
 
@@ -41,9 +40,7 @@ const HomePage = () => {
                     <img className={styles.imagem_homepage} src={ImagemApresentacao} alt="Apresentação" />
                 </div>
             </div>
-
             <hr></hr>
-
             <div className={styles.home_page}>
                 <div>
                     <img className={styles.imagem_quemsomos} src={ImagemQuemSomos} alt="Quem Somos" />
@@ -51,7 +48,7 @@ const HomePage = () => {
                 <div>
                     <h1 className={styles.titulo}>Quem Somos?</h1>
                     <p className={styles.subtitulo}>A Comp Júnior é uma empresa sem fins lucrativos que atua no mercado de tecnologia há mais de 20 anos em Lavras e região, prestando serviço de desenvolvimento web, mobile e multiplataforma.</p>
-                    <p className={styles.subtitulo}>A Comp Júnior também faz parte do Movimento Empresa Júnior e visa por acolher e desenvolver seus membros, oferecendo a primeira oportunidade profissional e contato com o mercado de trabalho, suas metodologias e estruturas.</p>
+                    <p className={styles.subtitulo}>A Comp Júnior também faz parte do Movimento Empresa Júnior e visa acolher e desenvolver seus membros, oferecendo a primeira oportunidade profissional e contato com o mercado de trabalho, suas metodologias e estruturas.</p>
                     {paginas.filter(sobre => sobre.id === 1).map(sobre => (
                         <div key={sobre.id} className={styles.botao}>
                             <Link to={`/${sobre.id}`}><BotaoSaibaMais /></Link>
@@ -59,9 +56,7 @@ const HomePage = () => {
                     ))}
                 </div>
             </div>
-
             <hr></hr>
-
             <div className={styles.home_page}>
                 <div>
                     <h1 className={styles.titulo}>Nossa Missão</h1>

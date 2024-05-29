@@ -27,16 +27,16 @@
     margin: 0 0 30px 0;
 }
 
-.home_page {
-    padding: 0 10%;
+.apresentacao {
+    padding: 100px 10% 0 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 90px;
 }
 
-.apresentacao {
-    padding: 100px 10% 0 10%;
+.home_page {
+    padding: 0 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,62 +46,52 @@
 
 @media (max-width: 1000px) {
     .titulo {
-        font-size: 36px; /* Ajusta o tamanho da fonte do título */
+        font-size: 36px;
         line-height: 50px;
     }
-
     .subtitulo {
-        font-size: 18px; /* Ajusta o tamanho da fonte do subtítulo */
+        font-size: 18px;
         line-height: 24px;
     }
 }
 
 @media (max-width: 875px) {
     .home_page {
-        flex-direction: column; /* Altera o layout para empilhamento vertical em telas menores */
-        text-align: flex-start; /* Centraliza o texto */
-   /* Espaçamento entre os elementos */
-    }
-
-    .apresentacao {
-        padding: 100px 10% 0 10%;
-        flex-direction: column; /* Altera o layout para empilhamento vertical em telas menores */
+        flex-direction: column;
         text-align: flex-start;
     }
-
-
+    .apresentacao {
+        padding: 100px 10% 0 10%;
+        flex-direction: column;
+        text-align: flex-start;
+    }
 }
-
 
 @media (max-width: 480px) {
     .home_page {
-        padding: 25px 5%; /* Reduz o padding ainda mais em telas muito pequenas */
+        padding: 25px 5%;
     }
     .apresentacao {
         padding: 100px 5% 0 5%;
     }
-
     .titulo {
-        font-size: 24px; /* Ajusta o tamanho da fonte do título */
+        font-size: 24px;
         line-height: 32px;
         display: flex;
         justify-content: center;
     }
-
     .subtitulo {
-        font-size: 16px; /* Ajusta o tamanho da fonte do subtítulo */
+        font-size: 16px;
         line-height: 20px;
         display: flex;
         justify-content: center;
 
     }
-
     .imagem_homepage, .imagem_quemsomos, .imagem_missao {
-        max-width: 80%; /* Ajusta a largura máxima da imagem em telas muito pequenas */
+        max-width: 80%;
         height: auto;
-        margin: 0 10%; /* Adiciona margens laterais de 10% */
+        margin: 0 10%;
     }
-
     .botao {
         display: flex;
         justify-content: center;

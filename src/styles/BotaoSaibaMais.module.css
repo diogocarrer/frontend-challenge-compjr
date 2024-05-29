@@ -1,19 +1,4 @@
-/* .saiba_mais {
-    background-color: var(--dark-blue-color);
-    color: var(--white-color);
-    font-family: var(--second-font);
-    border-radius: 15px;
-    border: none;
-    cursor: pointer;
-}
-
-.saiba_mais:hover {
-    background-color: var(--light-blue-color);
-    transform: scale(1.05);
-}
- */
-
- .saiba_mais {
+.saiba_mais {
     background-color: var(--dark-blue-color);
     color: var(--white-color);
     font-family: var(--second-font);

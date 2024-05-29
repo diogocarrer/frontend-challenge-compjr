@@ -25,7 +25,6 @@
     margin-bottom: 20px;
 }
 
-
 form {
     border: 3px solid var(--dark-blue-color);
     border-radius: 8px;
@@ -43,7 +42,6 @@ label {
   
 label span {
     color: #000000;
-
     font-weight: bold;
     text-align: left;
 }
@@ -95,8 +93,7 @@ textarea {
     font-size: 15px;
     margin: 0 auto;
     margin-top: 20px;
-    padding: 10px 20px; /* exige mudanças */
-
+    padding: 10px 20px;
 }
 
 .botao:hover {
@@ -109,10 +106,12 @@ textarea {
     font-size: 15px;
     margin-top: 5px;
 }
+
 .errorMessage {
     color: red;
     font-weight: 500;
 }
+
 .successMessage {
     color: green;
     font-weight: 500;

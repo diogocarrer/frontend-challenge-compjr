@@ -1,6 +1,8 @@
-import styles from './../styles/FormularioContato.module.css';
+/* react */
 import { useState } from 'react';
 import { FaUser, FaEnvelope, FaPhone, FaComment } from 'react-icons/fa';
+/* styles */
+import styles from './../styles/FormularioContato.module.css';
 
 const FormularioContato = () => {
     const [formData, setFormData] = useState({
@@ -32,11 +34,9 @@ const FormularioContato = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-
         let formIsValid = true;
         const newErrors = { nome: '', email: '', telefone: '', mensagem: '' };
 
-        // Check if each field is empty
         Object.keys(formData).forEach((key) => {
             if (!formData[key]) {
                 formIsValid = false;
@@ -44,30 +44,24 @@ const FormularioContato = () => {
             }
         });
 
-        // Validate telefone format only if it's not empty
         if (formData.telefone && !/^(\d{10}|\d{11})$/.test(formData.telefone)) {
             formIsValid = false;
             newErrors['telefone'] = 'Telefone inválido';
         }
 
-        // Validate email format only if it's not empty
         if (formData.email && !validateEmail(formData.email)) {
             formIsValid = false;
             newErrors['email'] = 'E-mail inválido';
         }
 
-        // If form is invalid, set errors
         if (!formIsValid) {
             setErrors(newErrors);
             setErrorMessage('Por favor, corrija os erros no formulário.');
             setSuccessMessage('');
-
-            // Clear errors message after 3 seconds
             setTimeout(() => {
                 setErrorMessage('');
             }, 3000);
         } else {
-            // Form is valid, submit it
             console.log("Form submitted:", formData);
             setFormData({
                 nome: '',
@@ -75,12 +69,9 @@ const FormularioContato = () => {
                 telefone: '',
                 mensagem: ''
             });
-            // Clear errors and set success message
             setErrors({ nome: '', email: '', telefone: '', mensagem: '' });
             setSuccessMessage('Formulário enviado com sucesso!');
             setErrorMessage('');
-
-            // Clear success message after 3 seconds
             setTimeout(() => {
                 setSuccessMessage('');
             }, 3000);

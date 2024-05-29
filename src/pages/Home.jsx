@@ -1,4 +1,4 @@
-//components
+/* components */
 import HomePage from "../components/HomePage"
 import CardServicos from "../components/CardServicos"
 import CasesSucesso from "../components/CasesSucesso"
@@ -25,7 +25,3 @@ const Home = () => {
 }
 
 export default Home
-
-
-
-

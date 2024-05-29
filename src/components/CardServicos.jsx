@@ -1,15 +1,14 @@
-import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+/* components */
 import BotaoSaibaMais from "./BotaoSaibaMais";
-
-//assets
-import WebEstatico from "../assets/website_estatico.svg";
+/* assets */
+import WebsiteEstatico from "../assets/website_estatico.svg";
 import SistemasDinamicos from "../assets/sistemas_dinamicos.svg";
 import AplicativosMobile from "../assets/aplicativos_mobile.svg";
 import AnaliseDados from "../assets/analise_dados.svg";
-
-
-//styles
+/* react */
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+/* styles */
 import styles from './../styles/CardServicos.module.css';
 
 const CardServicos = () => {
@@ -27,7 +26,6 @@ const CardServicos = () => {
 
     }, []);
 
-
     return (
         <div>
             <hr></hr>
@@ -37,16 +35,16 @@ const CardServicos = () => {
                 {paginas.slice(1, 5).map((pagina) => (
                     <div key={pagina.id} className={styles.card}>
                         {pagina.id === 2 && (
-                            <img src={WebEstatico} alt="pagina Image" className={styles.productImage} />
+                            <img src={WebsiteEstatico} alt="Website Estático" className={styles.imagem_servico} />
                         )}
                         {pagina.id === 3 && (
-                            <img src={SistemasDinamicos} alt="pagina Image" className={styles.productImage} />
+                            <img src={SistemasDinamicos} alt="Sistemas Dinâmicos" className={styles.imagem_servico} />
                         )}
                         {pagina.id === 4 && (
-                            <img src={AplicativosMobile} alt="pagina Image" className={styles.productImage} />
+                            <img src={AplicativosMobile} alt="Aplicativos Mobile" className={styles.imagem_servico} />
                         )}
                         {pagina.id === 5 && (
-                            <img src={AnaliseDados} alt="pagina Image" className={styles.productImage} />
+                            <img src={AnaliseDados} alt="Análise de Dados" className={styles.imagem_servico} />
                         )}
                         <Link to={`/${pagina.id}`}>
                             <BotaoSaibaMais />

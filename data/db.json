@@ -2,9 +2,9 @@
     "sobre": [
       {
         "id": 1,
-        "titulo": "Quem Somos",
-        "subtitulo": "Conheça mais sobre a Comp Júnior e sobre o que é uma empresa júnior",
-        "descricao": [
+        "titulo_sobre": "Quem Somos",
+        "subtitulo_sobre": "Conheça mais sobre a Comp Júnior e sobre o que é uma empresa júnior",
+        "descricao_sobre": [
           "O que é uma Empresa Júnior:",
           "Uma Empresa Júnior (EJ) é uma organização composta exclusivamente por estudantes de graduação que operam como uma empresa real, desenvolvendo projetos e concorrendo no mercado tradicional. No entanto, diferentemente das empresas tradicionais, uma EJ não visa lucro. O dinheiro gerado pelos projetos é reinvestido na própria empresa e em seus membros, proporcionando capacitações, acesso a materiais de aprendizado e participação em eventos do Movimento Empresa Júnior (MEJ).",
           "Nossa História:",
@@ -17,9 +17,9 @@
       },
       {
         "id": 2,
-        "titulo": "Website Estático",
-        "subtitulo": "Presença Online Profissional",
-        "descricao": [
+        "titulo_sobre": "Website Estático",
+        "subtitulo_sobre": "Presença Online Profissional",
+        "descricao_sobre": [
           "No mundo digital de hoje, uma presença online sólida é essencial para o sucesso de qualquer negócio. Na Comp Júnior, oferecemos serviços especializados em desenvolvimento de páginas web estáticas, projetadas para fornecer uma presença online eficaz e profissional para a sua empresa.",
           "Nossas páginas web estáticas são cuidadosamente desenvolvidas para oferecer um layout responsivo, adaptando-se perfeitamente a diferentes tamanhos de telas, desde desktops até dispositivos móveis. Cada detalhe é considerado para garantir uma experiência de usuário consistente e atraente em qualquer dispositivo.",
           "Desde o design inicial até a implementação final, nossa equipe de especialistas em desenvolvimento web trabalha em estreita colaboração com você para entender suas necessidades e objetivos específicos. Nosso objetivo é criar uma solução que não apenas atenda, mas supere suas expectativas, oferecendo uma presença online que destaque a sua marca e transmita sua mensagem de forma eficaz.",
@@ -29,9 +29,9 @@
       },
       {
         "id": 3,
-        "titulo": "Sistemas Dinâmicos",
-        "subtitulo": "Agilidade e Eficiência para seu Negócio",
-        "descricao": [
+        "titulo_sobre": "Sistemas Dinâmicos",
+        "subtitulo_sobre": "Agilidade e Eficiência para seu Negócio",
+        "descricao_sobre": [
           "Em um cenário empresarial em constante evolução, a agilidade e a eficácia dos sistemas dinâmicos são cruciais para impulsionar o sucesso e a competitividade. Na Comp Júnior, oferecemos soluções especializadas em sistemas dinâmicos, projetados para atender às necessidades específicas do seu negócio e promover resultados excepcionais.",
           "Nossos sistemas web dinâmicos são construídos com um foco central no gerenciamento eficiente, na lógica de negócios robusta e no desenvolvimento ágil. Cada solução é cuidadosamente concebida para garantir que a implementação seja altamente eficaz e capaz de atender a todas as demandas operacionais e estratégicas da sua empresa.",
           "Desde websites dinâmicos até sistemas de gestão complexos, nossa abordagem visa não apenas atender, mas exceder as expectativas dos nossos clientes. Nossa equipe experiente trabalha em estreita colaboração com você para compreender as nuances do seu negócio e desenvolver soluções personalizadas que impulsionem a eficiência, promovam a inovação e estimulem o crescimento.",
@@ -41,9 +41,9 @@
       },
       {
         "id": 4,
-        "titulo": "Aplicativos Mobile",
-        "subtitulo": "Inovação ao Alcance dos Seus Dedos",
-        "descricao": [
+        "titulo_sobre": "Aplicativos Mobile",
+        "subtitulo_sobre": "Inovação ao Alcance dos Seus Dedos",
+        "descricao_sobre": [
           "Na era digital, os aplicativos móveis se tornaram uma parte indispensável de nossas vidas, oferecendo funcionalidades personalizadas diretamente em nossos smartphones e tablets. Na Comp Júnior, oferecemos serviços especializados no desenvolvimento de aplicativos móveis sob medida para atender às necessidades específicas de nossos clientes.",
           "Nossos serviços abrangem todas as etapas do processo de desenvolvimento de aplicativos móveis, desde a consultoria inicial até o lançamento e suporte contínuo. Trabalhamos em estreita colaboração com nossos clientes para entender suas metas e objetivos, garantindo que o aplicativo final atenda às suas expectativas e às demandas do mercado.",
           "Nossa equipe de designers e desenvolvedores altamente qualificados trabalha para criar aplicativos visualmente atraentes, altamente funcionais e compatíveis com uma variedade de dispositivos e sistemas operacionais. Realizamos testes rigorosos em todas as etapas do desenvolvimento para garantir que o aplicativo seja livre de erros e ofereça uma experiência de usuário impecável.",
@@ -53,9 +53,9 @@
       },
       {
         "id": 5,
-        "titulo": "Análise de Dados",
-        "subtitulo": "Insights Estratégicos para Tomadas de Decisão",
-        "descricao": [
+        "titulo_sobre": "Análise de Dados",
+        "subtitulo_sobre": "Insights Estratégicos para Tomadas de Decisão",
+        "descricao_sobre": [
           "No mundo empresarial atual, a análise de dados desempenha um papel fundamental na tomada de decisões inteligentes e estratégicas. Esse processo envolve examinar conjuntos de dados para descobrir padrões, tendências e insights valiosos que podem impulsionar o crescimento e o sucesso de uma empresa.",
           "Na Comp Júnior, oferecemos serviços especializados em análise de dados, proporcionando às empresas as ferramentas e o conhecimento necessário para extrair o máximo valor de seus dados. Nosso objetivo é transformar dados brutos em informações acionáveis, permitindo que nossos clientes tomem decisões informadas e embasadas.",
           "Começamos o processo de análise de dados coletando informações de várias fontes, desde bancos de dados internos até dados externos. Em seguida, organizamos e preparamos esses dados para análise, garantindo que estejam prontos para serem examinados de forma eficaz.",
@@ -68,9 +68,9 @@
     ],
     
     "cases": [
-      { "id": "1", "titulo": "a", "descricao": "Descrição para o slide 1", "image": "https://api.dinamico.compjunior.com.br/files/images/screenshot20210415-se7i.png" },
-      { "id": "2", "titulo": "b", "descricao": "Descrição para o slide 2", "image": "https://api.dinamico.compjunior.com.br/files/images/screenshot20210415-juridica-jr1.png" },
-      { "id": "3", "titulo": "c", "descricao": "Descrição para o slide 3", "image": "https://api.dinamico.compjunior.com.br/files/images/screenshot20210415-lar-e-vida1.png" }
+      { "id": "1", "titulo_case": "SE7I", "descricao_case": "A SE7I, Semana de Tecnologia da Informação - Universidade Federal de Lavras estava indo para sua quarta edição. É um evento que reúne grandes nomes da tecnologia para palestrar para os membros da comunidade. Em 2020, a necessidade de reorganização global afetou todos, incluindo a SE7I, que precisou adaptar suas palestras e workshops para um formato remoto. Para enfrentar esse desafio, a Comp Júnior desenvolveu um sistema de organização de eventos que permitiu aos membros da comunidade explorar as palestras disponíveis, inscrever-se e, ao final do evento, receber seus certificados.", "image": "https://api.dinamico.compjunior.com.br/files/images/screenshot20210415-se7i.png" },
+      { "id": "2", "titulo_case": "Jurídica Jr.", "descricao_case": "A Jurídica Júnior, empresa júnior de Direito da Universidade Federal de Lavras, formada por alunos de graduação, atua fornecendo serviços como: elaboração de contratos, consultoria jurídica, pareceres jurídicos, estatuto social, regimento interno, recurso administrativo, registro de marca e termo de uso. A empresa tinha problemas para divulgar sua carta de serviços e estabelecer uma presença digital marcante. Para resolver isso, criamos uma página web com um design moderno e intuitivo. Nela, apresentamos a história da empresa, os serviços oferecidos, os parceiros, os depoimentos e a estrutura organizacional da empresa.", "image": "https://api.dinamico.compjunior.com.br/files/images/screenshot20210415-juridica-jr1.png" },
+      { "id": "3", "titulo_case": "Lar e Vida", "descricao_case": "O Lar Esperança e Vida é uma entidade civil de direito privado, sem fins lucrativos, dedicada a oferecer apoio às pessoas em tratamento de câncer, que enfrentam dificuldades devido aos altos custos e à doença. Para esclarecer sua missão e facilitar o processo de doação, desenvolvemos uma Landing Page clara e simples. Nela, destacamos os propósitos, missão, visão e valores da instituição, bem como os serviços oferecidos, formas de contribuir e como contatar a entidade. Essa iniciativa melhorou significativamente a visibilidade digital do Lar Esperança e Vida, evitando confusões na comunidade e tornando mais acessível o apoio aos que mais precisam.", "image": "https://api.dinamico.compjunior.com.br/files/images/screenshot20210415-lar-e-vida1.png" }
     ]
 }
   

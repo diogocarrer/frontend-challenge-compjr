@@ -1,135 +1,95 @@
-/* .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background-color: var(--dark-blue-color);
-  }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white-color);
+  padding: 30px 10%;
+  background: linear-gradient(180deg, #1C6289 0%, #0B3650 100%);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.content {
+  padding-top: 90px;
+}
   
-  .navbar_links {
-    list-style: none;
+.navbar_links {
     display: flex;
     gap: 1rem;
-  }
-  
-  .navbar_links li {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo {
-    height: 40px;
-  }
-  
-  .toggle_button {
-    background-color: var(--light-blue-color);
-    border: none;
-    color: white;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    border-radius: 4px;
-    font-family: var(--primary-font);
-    transition: background-color 0.3s;
-  }
-  
-  .toggle_button:hover {
-    background-color: var(--dark-blue-color);
-  }
-   */
-
-   .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     color: var(--white-color);
-    padding: 30px 10%;
+}
+
+.navbar_links div {
+  display: flex;
+  align-items: center;
+}
+  
+.link {
+  color: var(--white-color);
+  text-decoration: none;
+  font-size: 20px;
+}
+  
+.logo {
+  height: 40px;
+}
+  
+.toggle_button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1.3rem;
+  padding: 0;
+  transition: color 0.3s;
+}
+  
+.toggle_button:hover {
+  color: var(--light-blue-color);
+}
+
+.active {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+  .navbar_links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 90px;
+    left: 0;
     background: linear-gradient(180deg, #1C6289 0%, #0B3650 100%);
-    position: fixed; /* Torna a navbar fixa */
-    top: 0; /* Fixa a navbar no topo */
-    width: 100%; /* Garante que a navbar ocupe toda a largura da tela */
-    z-index: 1000; /* Garante que a navbar fique acima de outros elementos */
-    box-sizing: border-box; /* Inclui o padding na altura e largura totais */
+    width: 100%;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
   }
-  
-  /* Ajuste do espaçamento do conteúdo principal para não ser coberto pela navbar */
-  .content {
-    padding-top: 90px; /* Ajuste conforme a altura real da sua navbar */
+  .navbar_links.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
   }
-  
-  .navbar_links {
-    display: flex;
-    gap: 1rem;
-    color: var(--white-color);
-  }
-  
-  .navlink {
-    color: var(--white-color);
-    text-decoration: none;
-  }
-  
   .navbar_links div {
-    display: flex;
-    align-items: center;
+    margin: 2px 0 0 10px;
   }
-  
-  .logo {
-    height: 40px;
-  }
-  
   .toggle_button {
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-    font-size: 1.5rem;
-    padding: 0;
-    transition: color 0.3s;
+    display: block;
   }
-  
-  .toggle_button:hover {
-    color: var(--light-blue-color);
+  .logo {
+    height: auto;
+    max-width: 70%;
   }
-  
+}
 
-  /* Adicione media queries para ajustar a navbar em telas menores */
-  @media screen and (max-width: 800px) {
-    .navbar_links {
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      top: 90px;
-      left: 0;
-      background: linear-gradient(180deg, #1C6289 0%, #0B3650 100%);
-      width: 100%;
-      opacity: 0;
-      transform: translateY(-20px); /* Começa fora da tela para cima */
-      transition: opacity 0.3s ease, transform 0.3s ease; /* Adiciona uma transição suave para a abertura e fechamento */
-      pointer-events: none; /* Impede interações quando não está visível */
-    }
-  
-    .navbar_links.show {
-      opacity: 1;
-      transform: translateY(0); /* Desliza para a posição correta */
-      pointer-events: auto; /* Permite interações quando está visível */
-    }
-  
-    .navbar_links div {
-      margin: 2px 0 0 10px; /* Reduz a margem vertical para 5px */
-    }
-  
-    .toggle_button {
-      display: block; /* Mostra o botão de hambúrguer */
-    }
-
-    .logo {
-      height: auto; /* Permite que a altura seja ajustada automaticamente */
-      max-width: 70%; /* Define a largura máxima como 50% da largura da tela */
-    }
+@media screen and (max-width: 480px) {
+  .logo {
+    height: auto;
+    max-width: 60%;
   }
-
-  @media screen and (max-width: 480px) {
-    .logo {
-      height: auto; /* Permite que a altura seja ajustada automaticamente */
-      max-width: 70%; /* Define a largura máxima como 50% da largura da tela */
-    }
-  }
+}
