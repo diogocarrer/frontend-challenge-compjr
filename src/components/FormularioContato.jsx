@@ -1,6 +1,7 @@
 /* react */
 import { useState } from 'react';
 import { FaUser, FaEnvelope, FaPhone, FaComment } from 'react-icons/fa';
+import axios from 'axios';
 /* styles */
 import styles from './../styles/FormularioContato.module.css';
 
@@ -32,7 +33,7 @@ const FormularioContato = () => {
         return emailRegex.test(email);
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         let formIsValid = true;
         const newErrors = { nome: '', email: '', telefone: '', mensagem: '' };
@@ -62,19 +63,29 @@ const FormularioContato = () => {
                 setErrorMessage('');
             }, 3000);
         } else {
-            console.log("Form submitted:", formData);
-            setFormData({
-                nome: '',
-                email: '',
-                telefone: '',
-                mensagem: ''
-            });
-            setErrors({ nome: '', email: '', telefone: '', mensagem: '' });
-            setSuccessMessage('Formulário enviado com sucesso!');
-            setErrorMessage('');
-            setTimeout(() => {
-                setSuccessMessage('');
-            }, 3000);
+            try {
+                const response = await axios.post('http://localhost:3000/contatos', formData);
+                console.log("Form submitted:", response.data);
+
+                setFormData({
+                    nome: '',
+                    email: '',
+                    telefone: '',
+                    mensagem: ''
+                });
+                setErrors({ nome: '', email: '', telefone: '', mensagem: '' });
+                setSuccessMessage('Formulário enviado com sucesso!');
+                setErrorMessage('');
+                setTimeout(() => {
+                    setSuccessMessage('');
+                }, 3000);
+            } catch (error) {
+                console.error("There was an error submitting the form!", error);
+                setErrorMessage('Ocorreu um erro ao enviar o formulário.');
+                setTimeout(() => {
+                    setErrorMessage('');
+                }, 3000);
+            }
         }
     };
 
