@@ -53,7 +53,9 @@ const Navbar = () => {
 
   return (
     <nav className={styles.navbar}>
-      <img className={styles.logo} src={LogoBranca} alt="Comp Júnior Logo" />
+      <HashLink to="/#home" className={styles.logo_link} smooth>
+        <img className={styles.logo} src={LogoBranca} alt="Comp Júnior Logo" />
+      </HashLink>
       <div className={`${styles.navbar_links} ${showMenu ? styles.show : ''}`}>
         <div onClick={closeMenu}>
           <HashLink to="/#home" className={styles.link} smooth>{t('Home')}</HashLink>

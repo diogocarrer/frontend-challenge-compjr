@@ -41,14 +41,9 @@ label {
 }
   
 label span {
-    color: #000000;
+    color: var(--dark-blue-color);
     font-weight: bold;
     text-align: left;
-}
-
-label span .icon {
-    margin-right: 0.5em;
-    color: var(--dark-blue-color);
 }
   
 input,

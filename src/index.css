@@ -58,3 +58,20 @@ body.dark-mode textarea {
   color: var(--white-color);
   caret-color: var(--white-color);
 }
+
+body.dark-mode h1 {
+  color: #36aff0;
+}
+
+body.dark-mode form {
+  border: 3px solid #36aff0;
+}
+
+body.dark-mode input,
+body.dark-mode textarea {
+  border-bottom: 3px solid #36aff0;
+}
+
+body.dark-mode label span {
+  color: #36aff0;
+}

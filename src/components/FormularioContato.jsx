@@ -29,7 +29,27 @@ const FormularioContato = () => {
 
     const handleChange = (e) => {
         const { name, value } = e.target;
-        setFormData({ ...formData, [name]: value });
+
+        if (name === 'telefone') {
+            setFormData({ ...formData, [name]: formatPhoneNumber(value) });
+        } else {
+            setFormData({ ...formData, [name]: value });
+        }
+    };
+
+    const formatPhoneNumber = (value) => {
+        const phoneNumber = value.replace(/\D/g, '');
+        const phoneNumberLength = phoneNumber.length;
+
+        if (phoneNumberLength < 3) {
+            return phoneNumber;
+        } else if (phoneNumberLength < 7) {
+            return `(${phoneNumber.slice(0, 2)}) ${phoneNumber.slice(2)}`;
+        } else if (phoneNumberLength < 11) {
+            return `(${phoneNumber.slice(0, 2)}) ${phoneNumber.slice(2, 6)}-${phoneNumber.slice(6, 10)}`;
+        } else {
+            return `(${phoneNumber.slice(0, 2)}) ${phoneNumber.slice(2, 7)}-${phoneNumber.slice(7, 11)}`;
+        }
     };
 
     const validateEmail = (email) => {
@@ -68,7 +88,7 @@ const FormularioContato = () => {
             }, 3000);
         } else {
             try {
-                await postContato(formData); // Utilizando a função postContato para fazer o POST
+                await postContato(formData);
                 setFormData({
                     nome: '',
                     email: '',
@@ -98,6 +118,8 @@ const FormularioContato = () => {
             <h2 className={styles.subtitulo}>{t('Vamos discutir o seu próximo projeto!')}</h2>
 
             <form onSubmit={handleSubmit}>
+                <h1 className={styles.titulo_formulario}>Entrar em contato</h1>
+                <p className={styles.subtitulo_formulario}>Temos uma equipe pronta para conversar com você e esclarecer quaisquer dúvidas sobre a nossa empresa, nossos serviços e processos.</p>
                 <label>
                     <span><FaUser className={styles.icon} /></span>
                     <input type="text" name="nome" value={formData.nome} onChange={handleChange} placeholder={t('Seu nome')} />
