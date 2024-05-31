@@ -3,11 +3,14 @@ import Sobre from "../assets/saiba_mais.svg";
 /* react */
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
+/* translate */
+import { } from './../translate/i18n';
+import { useTranslation } from 'react-i18next'
 /* styles */
 import styles from './../styles/SaibaMais.module.css';
 
 const SaibaMais = () => {
-
+  const { t } = useTranslation();
   const url = "http://localhost:3000/sobre";
   const [pagina, setPagina] = useState(null);
   const { id } = useParams();
@@ -29,10 +32,10 @@ const SaibaMais = () => {
       <img src={Sobre} alt="Sobre" className={styles.imagem_sobre} />
       {pagina && (
         <div>
-          <h1 className={styles.titulo_sobre}>{pagina.titulo_sobre}</h1>
-          <h2 className={styles.subtitulo_sobre}>{pagina.subtitulo_sobre}</h2>
+          <h1 className={styles.titulo_sobre}>{t(pagina.titulo_sobre)}</h1>
+          <h2 className={styles.subtitulo_sobre}>{t(pagina.subtitulo_sobre)}</h2>
           {pagina.descricao_sobre.map((paragraph, index) => (
-            <p className={styles.paragrafo_sobre} key={index}>{paragraph} </p>
+            <p className={styles.paragrafo_sobre} key={index}>{t(paragraph)} </p>
           ))}
         </div>
       )}

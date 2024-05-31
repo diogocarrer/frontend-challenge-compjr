@@ -33,6 +33,10 @@
   text-decoration: none;
   font-size: 20px;
 }
+
+.link:hover {
+  color: var(--light-blue-color);
+}
   
 .logo {
   height: 40px;
@@ -52,11 +56,39 @@
   color: var(--light-blue-color);
 }
 
-.active {
-  font-weight: bold;
+.language_button {
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  font-weight: 500;
+  font-size: 17px;
 }
 
-@media screen and (max-width: 800px) {
+.language_button:hover {
+  transform: scale(1.05);
+}
+
+.language_button.pt {
+  background: linear-gradient(to bottom right, green 50%, red 50%);
+}
+
+.language_button.en {
+  background: linear-gradient(to bottom right, blue 50%, red 50%);
+}
+
+.language_button .flag_icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+@media screen and (max-width: 900px) {
   .navbar_links {
     display: flex;
     flex-direction: column;
@@ -65,6 +97,7 @@
     left: 0;
     background: linear-gradient(180deg, #1C6289 0%, #0B3650 100%);
     width: 100%;
+    padding: 10px;
     opacity: 0;
     transform: translateY(-20px);
     transition: opacity 0.3s ease, transform 0.3s ease;

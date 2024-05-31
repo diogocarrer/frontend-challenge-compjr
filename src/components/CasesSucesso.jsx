@@ -8,9 +8,13 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 /* styles */
 import styles from './../styles/CasesSucesso.module.css';
+/* translate */
+import { } from './../translate/i18n';
+import { useTranslation } from 'react-i18next'
 register();
 
 const CasesSucesso = () => {
+    const { t } = useTranslation();
     const url = "http://localhost:3000/cases";
     const [cases, setCases] = useState([]);
     const [activeIndex, setActiveIndex] = useState(0);
@@ -28,9 +32,9 @@ const CasesSucesso = () => {
     return (
         <div>
             <hr></hr>
-            <h1 className={styles.titulo}>Cases de Sucesso</h1>
-            <h2 className={styles.subtitulo}>Alguns dos projetos que já fizemos</h2>
-            {cases.length > 0 && <p className={styles.titulo_case}>{cases[activeIndex].titulo_case}</p>}
+            <h1 className={styles.titulo}>{t('Cases de Sucesso')}</h1>
+            <h2 className={styles.subtitulo}>{t('Alguns dos projetos que já fizemos')}</h2>
+            {cases.length > 0 && <p className={styles.titulo_case}>{t(cases[activeIndex].titulo_case)}</p>}
             <Swiper
                 slidesPerGroupSkip={1}
                 pagination={{ clickable: true }}
@@ -46,7 +50,7 @@ const CasesSucesso = () => {
                     </SwiperSlide>
                 ))}
             </Swiper>
-            {cases.length > 0 && <p className={styles.descricao_case}>{cases[activeIndex].descricao_case}</p>}
+            {cases.length > 0 && <p className={styles.descricao_case}>{t(cases[activeIndex].descricao_case)}</p>}
         </div>
     )
 }

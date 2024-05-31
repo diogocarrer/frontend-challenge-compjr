@@ -81,25 +81,12 @@
     },
     {
       "id": "3",
-      "titulo_case": "Lar e Vida",
+      "titulo_case": "Lar Esperança e Vida",
       "descricao_case": "O Lar Esperança e Vida é uma entidade civil de direito privado, sem fins lucrativos, dedicada a oferecer apoio às pessoas em tratamento de câncer, que enfrentam dificuldades devido aos altos custos e à doença. Para esclarecer sua missão e facilitar o processo de doação, desenvolvemos uma Landing Page clara e simples. Nela, destacamos os propósitos, missão, visão e valores da instituição, bem como os serviços oferecidos, formas de contribuir e como contatar a entidade. Essa iniciativa melhorou significativamente a visibilidade digital do Lar Esperança e Vida, evitando confusões na comunidade e tornando mais acessível o apoio aos que mais precisam.",
       "image": "https://api.dinamico.compjunior.com.br/files/images/screenshot20210415-lar-e-vida1.png"
     }
   ],
   "contatos": [
-    {
-      "nome": "teste",
-      "email": "carrer@gmail.com",
-      "telefone": "1234567897",
-      "mensagem": "aa",
-      "id": 1
-    },
-    {
-      "nome": "diogo",
-      "email": "carrerrrr@gmail.com",
-      "telefone": "12345432123",
-      "mensagem": "aaaaaaaaaaaa",
-      "id": 2
-    }
+    
   ]
 }
