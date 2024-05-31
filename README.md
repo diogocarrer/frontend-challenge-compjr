@@ -7,6 +7,7 @@ Este projeto consiste em um projeto frontend desenvolvido em React utilizando Vi
 ## Índice
 
 - [Equipe](#equipe)
+- [Requisitos e Funcionalidades](#requisitos-e-funcionalidades)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
 - [Instalação](#instalação)
 - [Como Usar](#como-usar)
@@ -15,6 +16,38 @@ Este projeto consiste em um projeto frontend desenvolvido em React utilizando Vi
 ## Equipe
 
 - [Diogo Carrer de Macedo](https://github.com/diogocarrer) - Desenvolvimento e documentação
+
+## Requisitos e Funcionalidades
+
+#### Requisitos
+
+O projeto possui requisitos claros a serem atendidos, garantindo sua funcionalidade e estrutura:
+
+- **Landing Page:** Deve conter informações sobre a empresa, serviços oferecidos, projetos realizados, cases de sucesso e informações de contato.
+- **Arquitetura de Pastas:** A aplicação deve seguir uma estrutura bem definida de pastas, incluindo diretórios para componentes, páginas, serviços e estilos, entre outros.
+- **Componentização:** Todos os componentes devem ser importados e criados na pasta designada para eles, facilitando a organização do código.
+- **Responsividade:** A aplicação deve ser responsiva para dispositivos móveis, tablets e desktops.
+- **Componentes Essenciais:** Deve incluir componentes como Navbar, Footer, Cards de Serviços, Cases de Sucesso, Formulário de Contato, Botão "Saiba mais" e Banner.
+
+#### Funcionalidades Esperadas
+
+Além dos requisitos obrigatórios, algumas funcionalidades específicas são esperadas:
+
+- **Navbar:** Deve conter botões para cada seção da Landing Page, facilitando a navegação.
+- **Footer:** Deve exibir as informações de contato da empresa.
+- **Cards de Serviços:** Devem apresentar breves descrições dos serviços e possibilitar a visualização detalhada ao clicar no botão "Saiba mais".
+- **Cases de Sucesso:** Devem incluir imagens e descrições breves de projetos bem-sucedidos.
+- **Formulário de Contato:** Deve permitir o envio de mensagens, com validações de campos obrigatórios, de email e de telefone, além de exibir mensagens de sucesso ou erro após o envio.
+- **Botão "Saiba mais":** Deve redirecionar os usuários para páginas com informações detalhadas sobre os serviços oferecidos.
+
+### Requisitos Não Obrigatórios (Extras)
+
+Além dos requisitos fundamentais, o projeto pode incluir funcionalidades extras para aprimorar sua experiência:
+
+- **Tema Dark:** Implementar um tema escuro para a aplicação.
+- **Requisição de API:** Realizar requisições para uma API externa e exibir os dados na Landing Page.
+- **Troca de Idioma:** Incluir um botão para permitir aos usuários alternar entre diferentes idiomas na aplicação.
+- **Persistência de Dados:** Armazenar os dados submetidos no formulário de contato em um banco de dados simples, permitindo sua recuperação posteriormente.
 
 ## Tecnologias Utilizadas
 
@@ -27,8 +60,6 @@ O projeto utiliza as seguintes bibliotecas e ferramentas:
 - **JSON Server**: Para criar uma API REST fake para desenvolvimento e funcionar como um banco de dados simples.
 - **React Icons**: Biblioteca de ícones para React.
 - **React Router DOM e React Router Hash Link**: Para navegação entre páginas e ancoras.
-
-Essas tecnologias foram selecionadas para oferecer uma experiência de desenvolvimento eficiente e construir uma aplicação web moderna e responsiva.
 
 ## Instalação
 
