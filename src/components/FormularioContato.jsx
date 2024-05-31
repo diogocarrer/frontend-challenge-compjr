@@ -69,7 +69,7 @@ const FormularioContato = () => {
             }
         });
 
-        if (formData.telefone && !/^(\d{10}|\d{11})$/.test(formData.telefone)) {
+        if (formData.telefone && !/^(\(\d{2}\) \d{4,5}-\d{4}|\(\d{2}\) \d{5}-\d{4})$/.test(formData.telefone)) {
             formIsValid = false;
             newErrors['telefone'] = t('Telefone inválido');
         }
