@@ -9,19 +9,22 @@ import { } from './../translate/i18n';
 import { useTranslation } from 'react-i18next'
 /* styles */
 import styles from './../styles/SaibaMais.module.css';
+import { fetchPages } from './../services/api';
 
 const SaibaMais = () => {
   const { t } = useTranslation();
-  const url = "http://localhost:3000/sobre";
   const [pagina, setPagina] = useState(null);
   const { id } = useParams();
 
   useEffect(() => {
     async function fetchData() {
-      const res = await fetch(url);
-      const data = await res.json();
-      const selectedPagina = data.find(pagina => pagina.id === parseInt(id));
-      setPagina(selectedPagina);
+      try {
+        const data = await fetchPages();
+        const selectedPagina = data.find(pagina => pagina.id === parseInt(id));
+        setPagina(selectedPagina);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
     }
 
     fetchData();
