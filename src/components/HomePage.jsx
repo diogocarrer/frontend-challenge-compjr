@@ -1,31 +1,29 @@
-/* assets */
+// components/HomePage.jsx
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import BotaoSaibaMais from "./BotaoSaibaMais";
+import styles from "../styles/HomePage.module.css";
 import ImagemApresentacao from "../assets/imagem_apresentacao.svg";
 import ImagemQuemSomos from "../assets/imagem_quemsomos.svg";
 import ImagemMissao from "../assets/imagem_missao.svg";
-/* components */
-import BotaoSaibaMais from "./BotaoSaibaMais";
-/* translate */
-import { } from './../translate/i18n';
-import { useTranslation } from 'react-i18next'
-/* styles */
-import styles from './../styles/HomePage.module.css';
-import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { fetchPages } from "../services/api";
 
 const HomePage = () => {
     const { t } = useTranslation();
-    const url = "http://localhost:3000/sobre";
     const [paginas, setPaginas] = useState([]);
 
     useEffect(() => {
-        async function fetchData() {
-            const res = await fetch(url);
-            const data = await res.json();
-            setPaginas(data);
-        }
+        const fetchData = async () => {
+            try {
+                const data = await fetchPages();
+                setPaginas(data);
+            } catch (error) {
+                console.error("Error fetching pages:", error);
+            }
+        };
 
         fetchData();
-
     }, []);
 
     return (
@@ -77,6 +75,6 @@ const HomePage = () => {
             </div>
         </div>
     );
-}
+};
 
 export default HomePage;

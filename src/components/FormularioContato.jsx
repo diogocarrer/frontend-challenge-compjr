@@ -1,7 +1,7 @@
 /* react */
 import { useState } from 'react';
 import { FaUser, FaEnvelope, FaPhone, FaComment } from 'react-icons/fa';
-import axios from 'axios';
+import { postContato } from '../services/api';
 /* styles */
 import styles from './../styles/FormularioContato.module.css';
 /* translate */
@@ -68,9 +68,7 @@ const FormularioContato = () => {
             }, 3000);
         } else {
             try {
-                const response = await axios.post('http://localhost:3000/contatos', formData);
-                console.log("Form submitted:", response.data);
-
+                await postContato(formData); // Utilizando a função postContato para fazer o POST
                 setFormData({
                     nome: '',
                     email: '',
@@ -85,7 +83,7 @@ const FormularioContato = () => {
                 }, 3000);
             } catch (error) {
                 console.error("There was an error submitting the form!", error);
-                setErrorMessage('Ocorreu um erro ao enviar o formulário.');
+                setErrorMessage(t('Ocorreu um erro ao enviar o formulário.'));
                 setTimeout(() => {
                     setErrorMessage('');
                 }, 3000);
@@ -100,8 +98,6 @@ const FormularioContato = () => {
             <h2 className={styles.subtitulo}>{t('Vamos discutir o seu próximo projeto!')}</h2>
 
             <form onSubmit={handleSubmit}>
-                <h1 className={styles.titulo_formulario}>{t('Entrar em contato')}</h1>
-                <p className={styles.subtitulo_formulario}>{t('Temos uma equipe pronta para conversar com você e esclarecer quaisquer dúvidas sobre a nossa empresa, nossos serviços e processos.')}</p>
                 <label>
                     <span><FaUser className={styles.icon} /></span>
                     <input type="text" name="nome" value={formData.nome} onChange={handleChange} placeholder={t('Seu nome')} />
@@ -119,8 +115,7 @@ const FormularioContato = () => {
                 </label>
                 <label>
                     <span><FaComment className={styles.icon} /></span>
-                    <textarea name="mensagem" value={formData.mensagem} onChange={handleChange} placeholder={t('Nos conte um pouco sobre seu projeto')}
-                    ></textarea>
+                    <textarea name="mensagem" value={formData.mensagem} onChange={handleChange} placeholder={t('Nos conte um pouco sobre seu projeto')}></textarea>
                     {errors.mensagem && <h4 className={styles.error}>{errors.mensagem}</h4>}
                 </label>
                 <button type="submit" className={styles.botao}>{t('Enviar')}</button>

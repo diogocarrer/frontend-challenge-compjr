@@ -1,4 +1,3 @@
-/* Swiper CSS e react */
 import { useState, useEffect } from 'react';
 import { register } from "swiper/element/bundle";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -6,24 +5,25 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-/* styles */
 import styles from './../styles/CasesSucesso.module.css';
-/* translate */
-import { } from './../translate/i18n';
-import { useTranslation } from 'react-i18next'
+import { useTranslation } from 'react-i18next';
+import { fetchCases } from "../services/api";
+
 register();
 
 const CasesSucesso = () => {
     const { t } = useTranslation();
-    const url = "http://localhost:3000/cases";
     const [cases, setCases] = useState([]);
     const [activeIndex, setActiveIndex] = useState(0);
 
     useEffect(() => {
         async function fetchData() {
-            const res = await fetch(url);
-            const data = await res.json();
-            setCases(data);
+            try {
+                const data = await fetchCases();
+                setCases(data);
+            } catch (error) {
+                console.error("Error fetching cases:", error);
+            }
         }
 
         fetchData();
@@ -52,7 +52,7 @@ const CasesSucesso = () => {
             </Swiper>
             {cases.length > 0 && <p className={styles.descricao_case}>{t(cases[activeIndex].descricao_case)}</p>}
         </div>
-    )
-}
+    );
+};
 
 export default CasesSucesso;
