@@ -118,8 +118,8 @@ const FormularioContato = () => {
             <h2 className={styles.subtitulo}>{t('Vamos discutir o seu próximo projeto!')}</h2>
 
             <form onSubmit={handleSubmit}>
-                <h1 className={styles.titulo_formulario}>Entrar em contato</h1>
-                <p className={styles.subtitulo_formulario}>Temos uma equipe pronta para conversar com você e esclarecer quaisquer dúvidas sobre a nossa empresa, nossos serviços e processos.</p>
+                <h1 className={styles.titulo_formulario}>{t('Entrar em contato')}</h1>
+                <p className={styles.subtitulo_formulario}>{t('Temos uma equipe pronta para conversar com você e esclarecer quaisquer dúvidas sobre a nossa empresa, nossos serviços e processos.')}</p>
                 <label>
                     <span><FaUser className={styles.icon} /></span>
                     <input type="text" name="nome" value={formData.nome} onChange={handleChange} placeholder={t('Seu nome')} />
